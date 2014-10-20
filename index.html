@@ -1,12 +1,14 @@
 ---
 layout: default
+title: Home
 ---
 
 <div class="home">
 
   <h1>Home</h1>
     <h3>Welcome to my blog. Feel free to browse a category of interest and see what I have been thinking about lately!</h3>
-
+    <hr/>
+    <br/>
     <ul class="post-list">
         {% for post in site.posts %}
         <li>
@@ -17,6 +19,5 @@ layout: default
         {% endfor %}
     </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

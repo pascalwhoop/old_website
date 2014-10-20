@@ -5,18 +5,11 @@ permalink: /personal/
 ---
 
 <p>Here all my postings about my personal life experiences are collected. Travels, sports, parties, etc.</p>
+<hr/><br/>
 
-<ul>
-    {% for post in site.posts %}
-    {% if post.categories contains 'personal' %}
-    <li>
 
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-    </li>
-    {% endif %}
-    {% endfor %}
-</ul>
+{% for post in site.posts %}
+{% if post.categories contains 'personal' %}
+{{post.content }}
+{% endif %}
+{% endfor %}

@@ -19,4 +19,18 @@
 
   </body>
 
+  {% if page.categories %}
+  <style type="text/css">
+      body{
+          background-image: url("/images/patterns/congruent_pentagon_{{page.categories[0]}}.png");
+      }
+  </style>
+  {% else %}
+  <style type="text/css">
+      body{
+          background-image: url("/images/patterns/congruent_pentagon_{{page.title}}.png");
+      }
+  </style>
+  {% endif %}
+
 </html>

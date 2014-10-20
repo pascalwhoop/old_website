@@ -7,6 +7,10 @@
   username: Pascalbrokmeier
   url: http://www.google.com/+PascalBrokmeier
 
+- service: rss
+  username: this website
+  url: http://pascalwhoop.github.io/feed.xml
+
 - service: github
   username: pascalwhoop
   url: http://www.github.com/pascalwhoop

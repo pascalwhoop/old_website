@@ -1,15 +1,35 @@
 ---
 layout: default
+comments: true
 ---
+{% assign post = page %}
+{% assign is_single = true %}
 <div class="post">
+<header>
+    <h2>{{post.title}}</h2>
+    <!--<ul>
+        <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:'%d. %B %Y'}}</time></li>
+        {% if post.categories != empty %}
+        <li>
+            {% for category in post.categories %}
+            <a href="/categories/#{{ category }}" title="Artikel zum Thema {{ category | capitalize }}" class="tag">{{ category | capitalize }}</a>{% unless category == post.categories.last %}, {% endunless %}
+            {% endfor %}
+        </li>
+        {% endif %}
+        <li>{{ content | number_of_words }} words</li>
+        &lt;!&ndash;<li><a href="{{ post.url }}#comments" data-disqus-identifier="{{ site.url }}{{ post.url }}">Kommentare</a></li>&ndash;&gt;
+        {% if is_single %}<li><a href="{{ post.url }}">Permalink</a></li>{% endif %}
+    </ul>-->
+</header>
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
+{{ content }}
 </div>
+<section>
+    <h3>Kommentare</h3>
+    <div id="comments">
+        {% include disqus_comments.html%}
+    </div>
+</section>
+<!--{% if comments and site.disqus_username %}-->
+
+<!--{% endif %}-->
