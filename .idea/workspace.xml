@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08b641d7-dca8-43da-b27f-13d57bf1fc34" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/technology/2014-10-20-my-first-blog-with-jekyll.markdown" afterPath="$PROJECT_DIR$/_posts/technology/2014-10-20-my-first-blog-with-jekyll.markdown" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/pascalwhoop.github.io.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/svg/google+.svg" afterPath="$PROJECT_DIR$/images/svg/google+.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pascalwhoop.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -101,7 +110,7 @@
         <entry file="file://$PROJECT_DIR$/_layouts/post.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.36231884" vertical-offset="0" max-vertical-offset="621">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <caret line="15" column="23" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -151,6 +160,7 @@
         <option value="$PROJECT_DIR$/_sass/_footer.scss" />
         <option value="$PROJECT_DIR$/_includes/social_media.html" />
         <option value="$PROJECT_DIR$/_includes/footer.html" />
+        <option value="$PROJECT_DIR$/_layouts/post.html" />
       </list>
     </option>
   </component>
@@ -567,17 +577,21 @@
       <updated>1413791693108</updated>
       <workItem from="1413791694116" duration="36000" />
       <workItem from="1413791752487" duration="639000" />
-      <workItem from="1413802211987" duration="20938000" />
+      <workItem from="1413802211987" duration="21062000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit of a few things">
       <created>1413825013799</created>
       <updated>1413825013799</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial commit of a few things">
+      <created>1413825530640</created>
+      <updated>1413825530640</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21613000" />
+    <option name="totallyTimeSpent" value="21737000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="-183" width="1920" height="998" extended-state="6" />
@@ -882,7 +896,7 @@
     <entry file="file://$PROJECT_DIR$/_layouts/post.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36231884" vertical-offset="0" max-vertical-offset="621">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
