@@ -1,0 +1,25 @@
+- service: twitter
+  username: PascalBrokmeier
+  url: http://www.twitter.com/PascalBrokmeier
+
+
+- service: google+
+  username: Pascalbrokmeier
+  url: http://www.google.com/+PascalBrokmeier
+
+- service: github
+  username: pascalwhoop
+  url: http://www.github.com/pascalwhoop
+
+
+- service: stackoverflow
+  username: Pascal
+  url: http://stackoverflow.com/users/1170940/pascal
+
+- service: xing
+  username: Pascal_Brokmeier
+  url: http://www.xing.com/profile/Pascal_Brokmeier
+
+- service: instagram
+  username: pascalbrokmeier
+  url: http://instagram.com/pascalbrokmeier
