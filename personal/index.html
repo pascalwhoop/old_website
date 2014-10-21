@@ -4,12 +4,14 @@ title: personal
 permalink: /personal/
 ---
 
-<p>Here all my postings about my personal life experiences are collected. Travels, sports, parties, etc.</p>
-<hr/><br/>
 
 
 {% for post in site.posts %}
 {% if post.categories contains 'personal' %}
-{{post.content }}
+
+<div class="post">
+    <h2><a href="{{post.url}}">{{ post.title }}</a></h2>
+    {{post.content }}
+</div>
 {% endif %}
 {% endfor %}

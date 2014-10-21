@@ -5,13 +5,14 @@ permalink: /technology/
   
 ---
 
-<p>Here all my postings about technology are collected. Feel free to browse!</p>
-<hr/><br/>
 {% for post in site.posts %}
 {% if post.categories contains 'technology' %}
 
-<h2><a href="{{post.url}}">{{ post.title }}</a></h2>        
-{{post.content}}
+<div class="post">
+    <h2><a href="{{post.url}}">{{ post.title }}</a></h2>
+    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    {{post.content}}
+</div>
         
 <br/>
 {% endif %}

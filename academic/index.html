@@ -3,11 +3,14 @@ layout: page
 title: academic
 permalink: /academic/
 ---
-<p>Here all my postings about my academic experiences are collected.</p>
-<hr/><br/>
+
 
 {% for post in site.posts %}
-{% if post.categories contains 'technology' %}
-{{ assign content = post.content }}
+{% if post.categories contains 'academic' %}
+
+<div class="post">
+    <h2><a href="{{post.url}}">{{ post.title }}</a></h2>
+    {{ post.content }}
+</div>
 {% endif %}
 {% endfor %}
