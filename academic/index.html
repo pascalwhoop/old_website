@@ -8,8 +8,9 @@ permalink: /academic/
 {% for post in site.posts %}
 {% if post.categories contains 'academic' %}
 
-<div class="post">
+<div class="post-container">
     <h2><a href="{{post.url}}">{{ post.title }}</a></h2>
+    <span class="post-meta post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
     {{ post.content }}
 </div>
 {% endif %}

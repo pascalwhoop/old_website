@@ -4,9 +4,11 @@ comments: true
 ---
 {% assign post = page %}
 {% assign is_single = true %}
-<div class="post">
+<div class="post-container">
 <header>
     <h2>{{post.title}}</h2>
+    <span class="post-meta post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+    {{page.categories}}{{page.tags}}
     <!--<ul>
         <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:'%d. %B %Y'}}</time></li>
         {% if post.categories != empty %}
