@@ -164,7 +164,7 @@
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
+  padding-top: $spacing-unit;
 }
 
 
@@ -184,11 +184,19 @@
   font-size: 24px;
 }
 
+ul.post-list{
+  margin-left: 0;
+}
+.post-list li{
+  list-style: none;
+
+}
+
 
 div.post-container {
   background-color: rgba(255, 255, 255, $milk-glass-opacity);
   margin-bottom: $spacing-unit;
-  padding: 10px;
+  padding: $spacing-unit-half;
   border: 1px solid $grey-color-light;
   border-radius: 3px;
   position: relative;

@@ -2,7 +2,6 @@
   username: PascalBrokmeier
   url: http://www.twitter.com/PascalBrokmeier
 
-
 - service: google+
   username: Pascalbrokmeier
   url: http://www.google.com/+PascalBrokmeier
@@ -14,7 +13,6 @@
 - service: github
   username: pascalwhoop
   url: http://www.github.com/pascalwhoop
-
 
 - service: stackoverflow
   username: Pascal
