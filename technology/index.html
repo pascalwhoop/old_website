@@ -1,19 +1,5 @@
 ---
-layout: page
+layout: post_list_page
 title: technology
-permalink: /technology/
-  
+permalink: /technology/  
 ---
-
-{% for post in site.posts %}
-{% if post.categories contains 'technology' %}
-
-<div class="post-container">
-    <h2><a href="{{post.url}}">{{ post.title }}</a></h2>
-    <span class="post-meta post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-    {{post.content}}
-</div>
-        
-<br/>
-{% endif %}
-{% endfor %}

@@ -7,4 +7,4 @@ tags: flowers picture
 ---
 I really like the photo I took yesterday during a nice late-summer evening. The colors of the flowers are quiet impressive!
 
-![flowers](/images/flowers_garden.jpeg)
+<img class="stretch" src="/images/flowers_garden.jpeg"/>

@@ -9,28 +9,26 @@
     {% include header.html %}
     {% include github_ribbon.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+      <div class="container page-content">
+          {{ content }}
       </div>
-    </div>
 
     {% include footer.html %}
 
   </body>
 
-  {% if page.categories %}
+
   <style type="text/css">
       body{
-          background-image: url("/images/patterns/congruent_pentagon_{{page.categories[0]}}.png");
+      {% if page.categories %}
+            background-image: url("/images/patterns/congruent_pentagon_{{page.categories[0]}}.png");
+      {% else if page.title %}
+      background-image: url("/images/patterns/congruent_pentagon_{{page.title}}.png");
+      {% else %}
+      background-image: url("/images/patterns/congruent_pentagon.png");
+      {% endif %}
       }
   </style>
-  {% else %}
-  <style type="text/css">
-      body{
-          background-image: url("/images/patterns/congruent_pentagon_{{page.title}}.png");
-      }
-  </style>
-  {% endif %}
+
 
 </html>

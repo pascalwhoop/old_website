@@ -1,10 +1,15 @@
 <footer class="site-footer">
 
-    <div class="wrapper">
 
-        <h2 class="footer-heading">Where to find me:</h2>
 
-        <div class="footer-col-wrapper">
+    <div class="container">
+
+        <div class="row">
+            <h2 class="col-md-3 footer-heading">Where to find me:</h2>
+            <h2 class="col-md-9 footer-heading">About this blog:</h2>
+        </div>
+
+        <div class="row">
             <!--<div class="footer-col  footer-col-1">
               <ul class="contact-list">
                 <li>{{ site.title }}</li>
@@ -12,11 +17,11 @@
               </ul>
             </div>-->
 
-            <div class="footer-col  footer-col-1">
+            <div class="col-md-3">
                 {% include social_media.html %}
             </div>
 
-            <div class="footer-col footer-col-2-3">
+            <div class="col-md-9">
                 <p class="text">{{ site.description }}</p>
             </div>
         </div>
