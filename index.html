@@ -3,17 +3,38 @@ layout: default
 title: home
 ---
 
-<h1>Newest posts:</h1>
-<div class="home">
-    <ul class="post-list">
-        {% for post in site.posts limit: 5 %}
-        <li>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-            <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-            {{ post.excerpt }}
-        </li>
-        {% endfor %}
-    </ul>
+<div class="row">
+
+
+    <div class="col-md-8">
+        <h1>Newest posts:</h1>
+
+        <div class="home">
+            <ul class="post-list">
+                {% for post in site.posts limit: 5 %}
+                <li>
+                    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+                    <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+                    {{ post.excerpt }}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <a class="twitter-timeline" href="https://twitter.com/PascalBrokmeier" data-widget-id="479157166339653633">Tweets
+            von @PascalBrokmeier</a>
+        <script>!function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+            if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = p + "://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        }(document, "script", "twitter-wjs");</script>
+    </div>
 
 
 </div>
