@@ -50,12 +50,13 @@
     border: 1px solid $grey-color-light;
     border-radius: 5px;
     text-align: right;
+    z-index: 999;
 
     .menu-icon {
       display: block;
       float: right;
       width: 36px;
-      height: 26px;
+      height: 32px;
       line-height: 0;
       padding-top: 10px;
       text-align: center;
