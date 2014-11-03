@@ -3,7 +3,9 @@ layout: post
 title:  "Getting started with Amazon AWS and NodeJS"
 date:   2014-11-02 12:00:00
 categories: technology
-tags: amazon aws nodejs 
+tags: amazon aws nodejs
+thumbnail: /images/amazon_aws.jpg 
+ 
 ---
 
 ## Getting the EC2 Instance up and running
