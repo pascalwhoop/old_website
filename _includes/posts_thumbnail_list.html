@@ -1,0 +1,21 @@
+<div class="post-list-thumbnail-container">
+{% for post in site.posts limit:5 %}
+    <div class="row post-list-thumbnail-item">
+        <div class="col-sm-3">
+            <div class="post-list-thumbnail">
+                {% if post.thumbnail %}
+                <img src="{{ post.thumbnail }}" class="center"/>
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-sm-9">
+            <div class="row">
+                <div class="col-md-9"><a href="{{ BASE_PATH }}{{ post.url }}"><h3>{{ post.title }}</h3></a></div>
+                <div class="col-md-3"><p class="post-list-thumbnail-date">{{ post.date | date: "%b %-d, %Y" }}</p></div>
+            </div>
+            <p>{{ post.content | strip_html | truncatewords: 40 }}
+            </p>
+        </div>
+    </div>
+{% endfor %}
+</div>

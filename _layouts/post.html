@@ -8,7 +8,13 @@ comments: true
 <header>
     <h2>{{post.title}}</h2>
     <span class="post-meta post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-    {{page.categories}}{{page.tags}}
+
+    <p>
+        <span class="glyphicon glyphicon-pushpin"></span>&nbsp;
+        {% for tag in page.tags %}
+        <span>{{tag}} </span>
+        {% endfor %}
+    </p>
     <!--<ul>
         <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:'%d. %B %Y'}}</time></li>
         {% if post.categories != empty %}

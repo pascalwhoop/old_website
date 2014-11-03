@@ -3,7 +3,6 @@ title: Pascal Brokmeiers Blog
 email: pascal.brokmeier@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Pascal Brokmeiers blog. All about software development, computer experiences, internet of things, sports and other hobbies. I concern myself with AngularJS, IoT, Spring, Java, JavaScript, BigData, Android hacking, OS X, IntelliJ, BPM and others.
-author_description: I am a stundent of computer sciences of economics at the University of Cologne. I have been working with software since 2011, where I started to work for OPITZ CONSULTING Deutschland GmbH. There I first learned all about Java and some frameworks, but soon I started to get into mobile and web development and ultimately concerned myself with the Internet of Things. I now spend most of my time with the IoT, mobile and webdev being more of a hobby to keep my skills and maybe improve them a bit. In my private life I enjoy sports such as kitesurfing, wakeboarding, skating, jogging and cycling. I also am a bit of a music enthusiast which is why I often go to EDM parties.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://pascalwhoop.github.io" # the base hostname & protocol for your site
 twitter_username: PascalBrokmeier

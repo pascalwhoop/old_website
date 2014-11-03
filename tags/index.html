@@ -1,0 +1,23 @@
+---
+layout: page
+title: Tags
+permalink: /tags/
+---
+
+<h2>Tags</h2>
+Here is a list of all tags I created for my blog posts. A click on one tag shows you a list of all the posts with this tag.
+<ul id="tags">
+    {% for tag in site.tags %}
+    <li>{{tag | first}}</li>
+    {% endfor %}
+</ul>
+
+        <!--<ul>
+            {% for posts in tag %}
+            {% for post in posts %}
+            {% if post.title %}
+            <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d.%m.%Y" }}</time> <a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endif %}
+            {% endfor %}
+            {% endfor %}
+        </ul>-->
