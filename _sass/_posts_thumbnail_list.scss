@@ -1,18 +1,21 @@
 .post-list-thumbnail-container{
   margin-top: -10px;
+
+}
+
+.post-list-thumbnail-item .col-sm-3, .post-list-thumbnail{
+  height: 100%;
 }
 
 .post-list-thumbnail{
-  max-height: 120px;
   width: 100%;
 
 }
 
 .post-list-thumbnail img{
-  max-height: 120px;
-  display: block;
+  /*display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;*/
 }
 
 .post-list-thumbnail-date{
