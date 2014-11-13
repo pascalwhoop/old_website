@@ -3,7 +3,9 @@ layout: post
 title:  "Using Websockets to forward REST request data to another device"
 date:   2014-11-02 15:00:00
 categories: technology
-tags: amazon aws nodejs websockets rest angularjs 
+tags: amazon aws nodejs websockets rest 
+thumbnail: /images/websockets-logo.png
+
 ---
 
 Alright so in my [previous post](http://pascalwhoop.github.io/technology/2014/11/02/gettings-started-with-amazon-aws.html) I explained how I got my EC2 Server running with a NodeJS Application. Now i want to expand on this and make it possible to host a mobile webapp on this server which takes REST requests from clients and forwards them to a developer machine that connects to the server using WebSockets. The developer machine can then make use of the data, e.g. to control lights in my case.   
