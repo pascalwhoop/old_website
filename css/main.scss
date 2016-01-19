@@ -6,52 +6,35 @@
 
 
 // Our variables
-$base-font-family: Roboto, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+//$base-font-family: Helvetica, Arial, sans-serif;
+//$base-font-size:   16px;
+//$small-font-size:  $base-font-size * 0.875;
+//$base-line-height: 1.5;
 
-$spacing-unit:     30px;
-$spacing-unit-half: 15px;
+//$spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color: #000000;
+//$text-color:       #111;
+//$background-color: #fdfdfd;
+//$brand-color:      #2a7ae2;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-$milk-glass-opacity: 0.34;
-$milkier-glass-opacity: 0.5;
+//$grey-color:       #828282;
+//$grey-color-light: lighten($grey-color, 40%);
+//$grey-color-dark:  darken($grey-color, 25%);
 
-$on-palm:          600px;
-$on-laptop:        800px;
+// Width of the content area
+//$content-width:    800px;
 
+//$on-palm:          600px;
+//$on-laptop:        800px;
 
-
-// Using media queries with like this:
-// @include media-query($palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
 
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
-        "layout",
-        "syntax-highlighting",
         "github",
-        "footer",
-        "about",
-        "posts_thumbnail_list",
-"tags"
+        "navigation"
 ;
+
+     

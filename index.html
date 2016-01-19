@@ -1,41 +1,28 @@
 ---
 layout: default
-title: home
 ---
+<div class="demo-blog__posts mdl-grid">
 
-<div class="row">
-
-
-    <div class="col-md-8">
-        <!--{% include three_posts_big.html %}-->
-        {% include posts_thumbnail_list.html %}
-        <!--<h1>Newest posts:</h1>
-
-        <div>
-            <ul class="post-list">
-                {% for post in site.posts limit: 5 %}
-                <li>
-                    <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-                    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-                    {{ post.excerpt }}
-                </li>
-                {% endfor %}
-            </ul>
+    <!--static "header"-->
+    <div class="mdl-card mdl-shadow--10dp mdl-cell mdl-cell--12-col">
+        <div class="mdl-card__title mdl-color-text--grey-600">
+            <h2>{{site.title}}</h2>
+        </div>
+        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+            {{site.description}}
+        </div>
+        <!--<div class="mdl-card__supporting-text meta mdl-color-text&#45;&#45;grey-600">
+            <div class="minilogo"></div>
+            <div>
+                <span><strong>Author: </strong>{{post.author}}</span>
+                <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+            </div>
         </div>-->
     </div>
-    <div class="col-md-4">
-        <a class="twitter-timeline" href="https://twitter.com/PascalBrokmeier" data-widget-id="479157166339653633">Tweets
-            von @PascalBrokmeier</a>
-        <script>!function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-            if (!d.getElementById(id)) {
-                js = d.createElement(s);
-                js.id = id;
-                js.src = p + "://platform.twitter.com/widgets.js";
-                fjs.parentNode.insertBefore(js, fjs);
-            }
-        }(document, "script", "twitter-wjs");</script>
-    </div>
 
 
+    <!--actual dynamic posts -->
+    {% for post in site.posts %}
+    {% include post_preview_card.html%}
+    {% endfor %}
 </div>

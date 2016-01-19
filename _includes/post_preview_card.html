@@ -1,0 +1,19 @@
+<div class="mdl-card mdl-shadow--10dp mdl-cell mdl-cell--12-col">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <div class="mdl-card__media mdl-color-text--grey-50 {% if post.banner %} banner {%if post.bannersize == 'large' %} banner-lrg {% endif %} {% else %} no-banner {% endif %}"
+             {% if post.banner%} style="background: url('/images/{{ post.banner }}') center" {% endif %}>
+            <h3>{{ post.title }}</h3>
+        </div>
+    </a>
+    <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+        <div class="avatar {% if post.author contains 'Pascal' %} avatar-pascal {% endif %}"></div>
+        <div>
+            <span><strong>Author: </strong>{{post.author}}</span>
+            <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+        </div>
+    </div>
+    <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+        {{ post.summary }}
+    </div>
+
+</div>

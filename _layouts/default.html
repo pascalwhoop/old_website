@@ -1,34 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  {% include head.html %}
-  {% include google_analytics.html %}
+{% include head.html %}
 
-  <body>
+<head>
+    <link rel="stylesheet" type="text/css" href="_sass/_base.scss"/>
+</head>
+<body>
 
-    {% include header.html %}
-    {% include github_ribbon.html %}
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--transparent">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <a href="/index.html"><span class="mdl-layout-title">{{site.title}}</span></a>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
+            <nav class="mdl-navigation">
+                {% for category in site.categories limit: 5 %}
+                <a class="mdl-navigation__link" href="/{{category[0]}}">{{category[0]}}</a>
+                {% endfor %}
+            </nav>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">{{site.title}}</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-typography--font-bold mdl-navigation__link" href="/index.html">Home</a>
+            {% for category in site.categories limit: 5 %}
+            <a class="mdl-navigation__link" href="/{{category[0]}}">{{category[0]}}</a>
+            {% endfor %}
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+    </main>
+</div>
 
-      <div class="container page-content">
-          {{ content }}
-      </div>
+<div class="demo-blog demo-blog--blogpost mdl-layout mdl-js-layout has-drawer is-upgraded">
+    <main class="mdl-layout__content">
+        {{ content }}
+        {% include footer.html %}
+    </main>
+    <div class="mdl-layout__obfuscator"></div>
 
-    {% include footer.html %}
+</div>
 
-  </body>
-
-
-  <style type="text/css">
-      body{
-      {% if page.categories %}
-            background-image: url("/images/patterns/congruent_pentagon_{{page.categories[0]}}.png");
-      {% else if page.title %}
-      background-image: url("/images/patterns/congruent_pentagon_{{page.title}}.png");
-      {% else %}
-      background-image: url("/images/patterns/congruent_pentagon.png");
-      {% endif %}
-      }
-  </style>
-
+<!--{% include github_ribbon.html %}-->
+{% include google_analytics.html %}
+</body>
 
 </html>

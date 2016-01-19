@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div class="demo-blog__posts mdl-grid">
+
+<div class="mdl-card mdl-shadow--10dp mdl-cell mdl-cell--12-col">
+    <div class="mdl-card__title mdl-color-text--grey-600">
+        <h3 style="text-transform: capitalize">{{page.category}}</h3>
+    </div>
+</div>
+
+{% for post in site.categories[page.category] %}
+{% include post_preview_card.html%}
+{% endfor %}
+</div>

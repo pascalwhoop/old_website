@@ -1,24 +1,12 @@
 # Site settings
-title: Pascal Brokmeiers Blog
+title: CuriousCaloo
 email: pascal.brokmeier@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Pascal Brokmeiers blog. All about software development, computer experiences, internet of things, sports and other hobbies. I concern myself with AngularJS, IoT, Spring, Java, JavaScript, BigData, Android hacking, OS X, IntelliJ, BPM and others.
+  A Blog about youth, student life, traveling, software engineerig, live experiences, photography and psychology. From AngularJS and the Internet of Things through Italy and Germany, swinging by techno parties and exploring down under, this blog really has a lot to offer
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://pascalwhoop.github.io" # the base hostname & protocol for your site
+url: "http://curiouscaloo.com" # the base hostname & protocol for your site
 twitter_username: PascalBrokmeier
 github_username:  pascalwhoop
-disqus_username: pascalwhoopgithubio
 
 # Build settings
 markdown: kramdown
-
-#disqus
-
-
-defaults:
-  -
-    scope:
-      path: "_posts/" # an empty string here means all files in the project
-      type: "posts"
-    values:
-      layout: "default"

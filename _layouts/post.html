@@ -1,43 +1,85 @@
 ---
 layout: default
-comments: true
 ---
-{% assign post = page %}
-{% assign is_single = true %}
-<div class="post-container">
-<header>
-    <h2>{{post.title}}</h2>
-    <span class="post-meta post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-    <p>
-        <span class="glyphicon glyphicon-pushpin"></span>&nbsp;
-        {% for tag in page.tags %}
-        <span>{{tag}} </span>
-        {% endfor %}
-    </p>
-    <!--<ul>
-        <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:'%d. %B %Y'}}</time></li>
-        {% if post.categories != empty %}
-        <li>
-            {% for category in post.categories %}
-            <a href="/categories/#{{ category }}" title="Artikel zum Thema {{ category | capitalize }}" class="tag">{{ category | capitalize }}</a>{% unless category == post.categories.last %}, {% endunless %}
-            {% endfor %}
-        </li>
-        {% endif %}
-        <li>{{ content | number_of_words }} words</li>
-        &lt;!&ndash;<li><a href="{{ post.url }}#comments" data-disqus-identifier="{{ site.url }}{{ post.url }}">Kommentare</a></li>&ndash;&gt;
-        {% if is_single %}<li><a href="{{ post.url }}">Permalink</a></li>{% endif %}
-    </ul>-->
-</header>
 
-{{ content }}
-</div>
-<section>
-    <h3>Kommentare</h3>
-    <div id="comments">
-        {% include disqus_comments.html%}
+<!-- arrow back button -->
+
+
+<!-- Post card-->
+<div class="demo-blog__posts mdl-grid">
+    <nav class="demo-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+
+        <a href="/index.html" class="demo-nav__button">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900"
+                    role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            Back to Home
+        </a>
+
+
+
+    </nav>
+
+
+    <div class="mdl-card mdl-shadow--10dp mdl-cell mdl-cell--12-col">
+        <div class="mdl-card__media mdl-color-text--grey-50">
+            <h3>{{ page.title }}</h3>
+        </div>
+        <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+            <div class="avatar {% if page.author contains 'Pascal' %} avatar-pascal {% endif %}"></div>
+            <div>
+                <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}
+                    {% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+            </div>
+            <div class="section-spacer"></div>
+            <!--<div class="meta__favorites">
+                425 <i class="material-icons" role="presentation">favorite</i>
+                <span class="visuallyhidden">favorites</span>
+            </div>
+            <div>
+                <i class="material-icons" role="presentation">bookmark</i>
+                <span class="visuallyhidden">bookmark</span>
+            </div>
+            <div>
+                <i class="material-icons" role="presentation">share</i>
+                <span class="visuallyhidden">share</span>
+            </div>-->
+        </div>
+        <div class="mdl-color-text--grey-700 mdl-card__supporting-text">
+            {{ content }}
+        </div>
+        <div class="mdl-color-text--primary-contrast mdl-card__supporting-text comments">
+            {% include disqus_comments.html %}
+        </div>
+
+
     </div>
-</section>
-<!--{% if comments and site.disqus_username %}-->
 
-<!--{% endif %}-->
+    <nav class="demo-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+        {% if page.next.url %}
+        <a href="{{page.next.url}}" class="demo-nav__button">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900"
+                    role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            Newer
+        </a>
+        {% endif %}
+
+        <div class="section-spacer"></div>
+
+        {% if page.previous.url %}
+        <a href="{{page.previous.url}}" class="demo-nav__button">
+            Older
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900"
+                    role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+        {% endif %}
+    </nav>
+</div>
+
+

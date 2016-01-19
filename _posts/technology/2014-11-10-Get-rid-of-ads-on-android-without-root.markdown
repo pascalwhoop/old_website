@@ -2,9 +2,9 @@
 layout: post
 title:  "How to get rid of ads on android without root"
 date:   2014-11-10 20:00:00
-categories: technology
+categories: Technology
 tags: android technology advertising tutorial
-thumbnail: /images/Adblock-Android.png 
+thumbnail:
 ---
 
 I recently came across a cool article that showed how to get rid of advertising on android without rooting your device. This is useful if your phone is supplied by your employer and you aren't allowed to root it. 
