@@ -106,7 +106,7 @@ body {
     padding: 16px;
     min-height: 64px;
     display: flex;
-    align-items: center;
+    align-items: left;
     strong {
       font-weight: 400;
     }
@@ -260,7 +260,7 @@ body {
   }
   .meta {
     > * {
-      align-items: center;
+      align-items: left;
     }
     + .mdl-card__supporting-text {
       border: 0;
