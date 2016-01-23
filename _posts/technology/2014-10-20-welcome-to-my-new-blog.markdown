@@ -2,7 +2,7 @@
 layout: post
 title:  "welcome to my new blog"
 date:   2014-10-20 09:54:24
-categories: technology blog
+categories: technology
 author: Pascal Brokmeier
 summary: This is my new blog ...
 ---

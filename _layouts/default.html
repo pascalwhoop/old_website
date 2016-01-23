@@ -3,12 +3,9 @@
 
 {% include head.html %}
 
-<head>
-    <link rel="stylesheet" type="text/css" href="_sass/_base.scss"/>
-</head>
 <body>
 
-<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+<div class="demo-blog demo-blog--blogpost has-drawer is-upgraded demo-layout-transparent mdl-layout mdl-js-layout">
     <header class="mdl-layout__header mdl-layout__header--transparent">
         <div class="mdl-layout__header-row">
             <!-- Title -->
@@ -31,19 +28,16 @@
             <a class="mdl-navigation__link" href="/{{category[0]}}">{{category[0]}}</a>
             {% endfor %}
         </nav>
-    </div>
-    <main class="mdl-layout__content">
-    </main>
-</div>
-
-<div class="demo-blog demo-blog--blogpost mdl-layout mdl-js-layout has-drawer is-upgraded">
+    </div>    
+    
     <main class="mdl-layout__content">
         {{ content }}
         {% include footer.html %}
     </main>
-    <div class="mdl-layout__obfuscator"></div>
-
+    
 </div>
+
+
 
 <!--{% include github_ribbon.html %}-->
 {% include google_analytics.html %}

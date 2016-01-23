@@ -2,7 +2,7 @@
 layout: post
 title:  "InspireIT video has been released"
 date:   2014-10-20 19:43:24
-categories: technology academic
+categories: technology
 tags: OC youtube video bachelorthesis
 bannersize: large
 author: Pascal Brokmeier

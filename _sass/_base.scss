@@ -88,7 +88,7 @@ body {
   .mdl-card__media {
     box-sizing: border-box;
     background-size: cover;
-    padding: 24px;
+    padding: 24px 35px;
     display: flex;
     flex-grow: 1;
     flex-direction: row;
@@ -103,7 +103,7 @@ body {
   }
   .mdl-card__supporting-text {
     width: 100%;
-    padding: 16px;
+    padding: 16px 35px;
     min-height: 64px;
     display: flex;
     align-items: left;
@@ -111,6 +111,12 @@ body {
       font-weight: 400;
     }
   }
+
+  @media (max-width: 512px) {
+    .mdl-card__supporting-text {    
+      padding: 16px;    
+    }
+  }  
   .mdl-card__media ~ .mdl-card__supporting-text {
     min-height: 64px;
   }
@@ -124,9 +130,15 @@ body {
   .mdl-card__actions:first-child {
     margin-left: 0;
   }
+@media (max-width: 512px) {
+    .meta {    
+      padding: 16px;    
+    }
+  }
+
   .meta {
     box-sizing: border-box;
-    padding: 16px;
+    padding: 16px 35px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -265,12 +277,7 @@ body {
     + .mdl-card__supporting-text {
       border: 0;
       display: flex;
-      flex-direction: column;
-      p {
-        padding: 20px 56px;
-        font-size: 16px;
-        line-height: 28px;
-      }
+      flex-direction: column;      
       img{
         max-width:100%;
       }
