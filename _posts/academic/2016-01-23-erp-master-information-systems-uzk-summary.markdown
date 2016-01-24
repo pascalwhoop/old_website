@@ -13,8 +13,6 @@ summary: A summary of the slides for the course ERP during the M.Sc. Information
 # ERP Summary
 
 
-Make all questions headlines `\n([0-9]{1,2}\.) --> \n#### $1`
-
 This summary will be written along the lines of the review questions of each slide deck. I will try and answer all questions of the slide decks and by this, summarize each chapter. To differentiate between my already present knowledge and the knowledge I yet have to build up, I'll always try and answer a question by myself first and then research in the slides. My own answers will be written in *italic text*.
 
 ---
@@ -63,7 +61,6 @@ ERP systems usually make use of data integration as well as a common Business pr
 Logical integration concerning the **data dimension** of integration means the synchronisation between several possible storage locations for data. Physical integration means the actual physical storage of all data in the same place. (Schoder, p. 465). Synchronisation doesn't necessarily mean, that all locations need to have the same contents but they all need to be logically structured in the same way to enable applications to communicate data between each other without failure. 
 
 
-
 #### 6. What are the key benefits and limitations of systems integration?
 
 *Integrating systems across a business helps companies to streamline their processes towards the customers. Business units are more capable to work together as a team rather than independent units and management is better capable of managing, controlling and improving the overall efficiency of the company. Also, through shared storage and data, companies are less likely to make mistakes due to incoherent data sets of customers or other important information. Therefore the quality of the data which is used as a base for operations is improved.*
@@ -101,12 +98,13 @@ They serve to both streamline the production process towards an optimal process 
 
 ### Questions
 
-####1. What are models in systems development compared to other disciplines?
+#### 1. What are models in systems development compared to other disciplines?
 
 *Models are a representation of the information system that is to be developed. However these models can describe several perspectives, such as the hardware, software, module, or component perspectives.* 
 
 TODO What does he mean? Nothing in the slides -.-
-####2. What is a process architecture?
+
+#### 2. What is a process architecture?
 
 * What processes and their scope
 * **Who** is the owner / customer of the process? Suppliers / Partners?
@@ -115,7 +113,8 @@ TODO What does he mean? Nothing in the slides -.-
 ![](/images/2016-01-23-erp-master-information-systems-uzk-summary/2.png)
 
 Supporting processes can be used by other processes, while core processes are directly generating value by being linked to external customers
-####3. List the phases of the business process management lifecycle and how process modelling is involved in them.
+
+#### 3. List the phases of the business process management lifecycle and how process modelling is involved in them.
 
 0. Process identification 
 1. Process discovery → Output: as-is process model
@@ -125,20 +124,22 @@ Supporting processes can be used by other processes, while core processes are di
 5. Monitoring and controlling → Output: Performance and conformance insights
 
 Process modelling is done during the process design phase, which uses both the as-is model as well as the aquired insights from the analysis and is supposed to output an improved process model. It is also involved in the *as-is* modelling as well as the implementation phase, because moving from a model concept to an executable version .
-####4. What are the main components of any business process (model)?
+
+#### 4. What are the main components of any business process (model)?
 
 * Activities: active elements, consume time and change state of BOs
 * Events: In/Output of process, passive but influence conditional flow of P
 * Business Objects (Data): artifacts that undergo state changes, passive, physical or electronic
 * Actors (or Resources): Humans and systems, that perform operations
-####5. What are the key elements of BPMN?
+
+#### 5. What are the key elements of BPMN?
 
 * **Flow Objects**: Events, activities and gateways
 * **Artefacts:** Data objects, groups and annotations
 * **Connecting objects**: sequence & message flow, associations
 * **structuring**: swimlanes
 
-####6. What is the relationship between business processes, business process models, and enterprise applications?
+#### 6. What is the relationship between business processes, business process models, and enterprise applications?
 
 * Business processes are the in-fact activities that are taking place in organisations, independent on wether they are modelled or not. The models then are a formal representation of these processes and are used to both analyse and improve or change the ongoing processes. Enterprise applications then present a platform to execute and analyse these processes.
 
@@ -149,19 +150,21 @@ Process modelling is done during the process design phase, which uses both the a
 
 ### Questions 
 
-####1. What is business process management?
+#### 1. What is business process management?
 
 Business process management is the definition, analysis, implementation and improvement of ongoing processes in an organisation. A business process is usually a string of activities that are directly linked to value generation. Most of the time this means theses processes are tightly connected to what customers require. 
 
 ![](/images/2016-01-23-erp-master-information-systems-uzk-summary/3.png)
-####2. What are key measures for process performance, and how are they related to each other?
+
+#### 2. What are key measures for process performance, and how are they related to each other?
 
 * **R**: average flow rate: Number of flow units that flow through the process per time unit. *unit / time*
 * **I**: Average Inventory: Average number of flow units present within the process boundaries
 * **T**: Average Flow Time: The average time, a unit takes to finish the process.
 
-**I = R x T** also called **Little's Law**
-####3. How is flow time analysed and assessed?
+\`I = R * T\` also called **Little's Law**
+
+#### 3. How is flow time analysed and assessed?
 
 Flow time can be influenced by two factors. The total time spent processing the unit (**operations**) and the total time waiting (**buffers**). While operations are necessary and can only be shortened, if the operations become more efficient, the buffers are an unwanted necessity to make the process work and should be kept minimal. The ratio between time being processed and T(waiting+processing) is called the **Flow Time Efficiency**. The sum of all processing durations is also called **Theoretical Flow Time** and describes the time needed if no waiting was necessary. If several paths are possible, the one with the highest theoretical flow time is called **critical path**. Waiting here causes direct delays to the overall process.
 
@@ -175,20 +178,55 @@ It is also possible to separate a process into value-adding and non-value-adding
 **To Calculate**:
 Theoretical flow time + average waiting = T
 
-####4. How is flow rate analysed and assessed?
+#### 4. How is flow rate analysed and assessed?
 
-####5. What is capacity utilisation and how it is assessed?
-####6. How can processes be improved and what is the role of information technology in this?
+The flow rate describes the amount of units that the process can output at a given time interval / unit. 
+
+* The **Process capacity** is the maximum sustainable flow rate of a process. 
+* The **Theoretical capacity** is the maximum sustainable flow rate if the **bottleneck resource** is fully utilized. 
+	* TC(p) = TC(bottleneckResource)
+* Activities are performed by **resources**. A **resource pool** is a collection of interchangeable resources that can perform identical tasks. Each is called a *resource unit*.
+* **T<sub>p</sub>[time]**: The **unit load of a resource unit** is the total amount of time a resource works on a flow unit. A resource unit can be used in several activities therefore its load is the sum of all activities in which is is utilised
+* **Load batch (LB)**: Number of units that a resource can process simultaneously. 
+	* Theoretical capacity for parallel working resource: LB<sub>unit</sub> / T<sub>p</sub>
+		* only applicable if parallel work doesn't cause efficiency drops on the unit level
+* **Scheduled availability (SAV)**: Amount of time a resource is planned to operate
+
+ 
+$$TC(unit) = \frac{1}{T_{p,scheduled}}* LB_{unit}*SAV$$
+
+then the TC of a resource pool is
+
+$$ TC(unit) * poolsize $$
+
+
+**To measure**: Count the units processed over an extended period of time. Compute the flow units per unit of time.
+
+
+#### 5. What is capacity utilisation and how it is assessed?
+
+It measures the utilisation of resources that are available relative to their actual utilisation
+
+\`ρ_p=\frac{\text{Throughput}}{\text{theoretical capacity of resource pool p}}\`
+
+the CU of the process is again the one of the bottleneck resource pool
+
+#### 6. How can processes be improved and what is the role of information technology in this?
 
 **To improve**: 
+
 * Eliminate activities
 * Work in parallel
 * increase efficiency
 
 IT can help in several ways. It can help transfer data instantaneous instead of physically transferring it, causing a reduction in NVAA activity time → increased process quality. It can also enable coordination of actors to allow concurrency and therefore reducing the length of the critical path. Also it can help eliminate activities like controlling and validation steps by automated quality controls.
 
+### Other notes
+
+It is a common pattern to either improve a process through making it more *cost-effective* or by making it more *responsive*. 
+Over time, the reasons for competitive advantage have changed. Before the 60s, economies of scale were the primary source of competitive advantage. Mass production without customising were 
 --- 
 
 ## Questions for Prof. Rosenkranz
 
-1. Why is the Wonder Shed Inc example concluding I~w~/R = T~w~ ? If 16,5 units/h are produced and a total of 80 are in the process (+ 5 in each stage?) then shouldn't 80/ 0,275 = T and ≠ T~w~?
+1. Why is the Wonder Shed Inc example concluding I<sub>w</sub>/R = T<sub>w</sub> ? If 16,5 units/h are produced and a total of 80 are in the process (+ 5 in each stage?) then shouldn't 80/ 0,275 = T and ≠ T<sub>w</sub>?
