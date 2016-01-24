@@ -16,6 +16,11 @@ body {
 
 }
 
+footer{
+  i{
+    color: $theme-font-color;
+  }
+}
 
 @media (max-width: 512px) and (min-resolution: 1.5dppx), (max-width: 1024px) and (max-resolution: 1.5dppx) {
   body::before {
@@ -36,22 +41,8 @@ body {
   }
 }
 
-.mdl-layout__header {
-  a {
-    color: #fff !important;
-    text-transform: capitalize;
-  }
-
-}
-
-.mdl-layout__drawer{
-  a{
-    text-transform: capitalize;
-  }
-}
-
-.demo-blog {
-  .demo-blog__posts {
+.blog {
+  .content-container, .post .mdl-card{
     max-width: 900px;
     padding: 0;
     display: flex;
@@ -59,6 +50,10 @@ body {
     margin: 0 auto;
     flex-shrink: 0;
   }
+  /*.postlist .mdl-card{
+    padding: 0;
+    flex-shrink: 0;
+  } */
   &.mdl-layout .mdl-layout__content {
     padding-top: 230px;
     position: relative;
@@ -66,7 +61,6 @@ body {
   }
   .mdl-card {
     margin: 20px 8px;
-
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -105,33 +99,31 @@ body {
   }
   .mdl-card__supporting-text {
     width: 100%;
-    padding: 16px 35px;
+    padding: $text-padding-v $text-padding-h;
     min-height: 64px;
     display: flex;
-    align-items: left;    
-  }
-
-  @media (max-width: 512px) {
-    .mdl-card__supporting-text {    
-      padding: 16px;    
-    }
-  }  
-  .mdl-card__media ~ .mdl-card__supporting-text {
-    min-height: 64px;
-  }
-  .mdl-card__supporting-text:not(:last-child) {
+    align-items: left;
     box-sizing: border-box;
     min-height: 76px;
   }
-  &:not(.demo-blog--blogpost) .mdl-card__supporting-text ~ .mdl-card__supporting-text {
+
+  @media (max-width: 512px) {
+    .mdl-card__supporting-text {
+      padding: 16px;
+    }
+  }
+  .mdl-card__media ~ .mdl-card__supporting-text {
+    min-height: 64px;
+  }
+  .mdl-card__supporting-text ~ .mdl-card__supporting-text {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
   .mdl-card__actions:first-child {
     margin-left: 0;
   }
-@media (max-width: 512px) {
-    .meta {    
-      padding: 16px;    
+  @media (max-width: 512px) {
+    .meta {
+      padding: 16px;
     }
   }
 
@@ -165,50 +157,8 @@ body {
     display: flex;
     flex-direction: column;
   }
-  &.is-small-screen .demo-blog__posts > .mdl-card {
-    &.coffee-pic {
-      order: 0;
-    }
-    &.something-else {
-      order: -1;
-    }
-  }
-  .coffee-pic .mdl-card__media {
-    background-image: url('../images/coffee.jpg');
-  }
-  .something-else {
-    .mdl-card__media {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      font-size: 13px;
-      font-weight: 500;
-      border-top-left-radius: 2px;
-      border-top-right-radius: 2px;
-      img {
-        width: 64px;
-        height: 64px;
-        margin-bottom: 10px;
-      }
-    }
-    > button {
-      position: absolute;
-      top: 0;
-      right: 28px;
-      transform: translate(0px, -28px);
-    }
-    .mdl-card__supporting-text {
-      background-color: #F5F5F5;
-      border-bottom-left-radius: 2px;
-      border-bottom-right-radius: 2px;
-    }
-  }
 
-  .shopping .mdl-card__media {
-    background-image: url('../images/shopping.jpg');
-  }
-  .demo-blog__posts > .demo-nav {
+  .post > .demo-nav {
     margin: 12px 15px;
     display: flex;
     flex-direction: row;
@@ -261,121 +211,36 @@ body {
   }
 }
 
-.demo-blog--blogpost {
-  .custom-header {
-    background-color: transparent;
-  }
+.comments {
+  background-color: #EEE;
+}
 
-  .comments {
-    background-color: #EEE;
+.meta {
+  > * {
+    align-items: left;
   }
-  .meta {
-    > * {
-      align-items: left;
-    }
-    + .mdl-card__supporting-text {
-      border: 0;
-      display: flex;
-      flex-direction: column;      
-      img{
-        max-width:100%;
-      }
-    }
-  }
-  .comments {
+  + .mdl-card__supporting-text {
+    border: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-    padding: 32px;
-    box-sizing: border-box;
-    > form {
-      display: flex;
-      flex-direction: row;
-      margin-bottom: 16px;
-      .mdl-textfield {
-        flex-grow: 1;
-        margin-right: 16px;
-        color: rgb(97, 97, 97);
-        .mdl-textfield__input {
-          font-family: 'Roboto', 'Helvetica', sans-serif;
-        }
-        input, textarea {
-          resize: none;
-        }
-      }
-      button {
-        margin-top: 20px;
-        background-color: rgba(0, 0, 0, 0.24);
-        color: white;
-      }
-    }
-    .comment {
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
-      > {
-        .comment__header {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          margin-bottom: 16px;
-          > {
-            .comment__avatar {
-              width: 48px;
-              height: 48px;
-              border-radius: 24px;
-              margin-right: 16px;
-            }
-            .comment__author {
-              flex-grow: 1;
-              display: flex;
-              flex-direction: column;
-            }
-          }
-        }
-        .comment__text {
-          line-height: 1.5em;
-        }
-        .comment__actions {
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-start;
-          align-items: center;
-          font-size: 0.8em;
-          margin-top: 16px;
-          button {
-            margin-right: 16px;
-            color: rgba(0, 0, 0, 0.24);
-          }
-        }
-        .comment__answers {
-          padding-top: 32px;
-          padding-left: 48px;
-        }
-      }
+    img {
+      max-width: 100%;
     }
   }
-  .demo-back {
-    color: white;
+}
 
-  }
+.demo-back {
+  color: white;
+
 }
 
 /* Workaround for Firefox.
  * User agent stylesheet kept overwriting the font in FF only.
  */
 
-.demo-blog {
+.blog {
   .section-spacer {
     flex-grow: 1;
-  }
-  .something-else {
-    overflow: visible;
-    z-index: 10;
-  }
-  .amazing .mdl-card__title {
-    background-color: #263238;
   }
 }
 
@@ -415,7 +280,7 @@ body {
   background: transparent;
 }
 
-.demo-blog .mdl-mini-footer {
+.blog .mdl-mini-footer {
   margin-top: 80px;
   height: 120px;
   padding: 40px;
@@ -424,14 +289,3 @@ body {
   box-sizing: border-box;
 }
 
-.avatar{
-  width: 44px;
-  height: 44px;
-  background-size: 50%;
-  border-radius: 22px;
-}
-.avatar-pascal {
-  background: url("http://www.gravatar.com/avatar/6b19907277eff11f1827addbcab46413?s=200");
-  background-size: contain;
-  background-position: center;
-}

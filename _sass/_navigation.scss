@@ -6,4 +6,12 @@
 
  .mdl-layout__header a{
    text-decoration: none;
+   color: #fff !important;
+   text-transform: capitalize;
+ }
+
+ .mdl-layout__drawer{
+   a{
+     text-transform: capitalize;
+   }
  }

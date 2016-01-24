@@ -1,4 +1,5 @@
-<div class="mdl-card mdl-shadow--10dp mdl-cell mdl-cell--12-col">
+
+<div class="mdl-card mdl-shadow--10dp mdl-cell {% if post.width-class %} {{post.width-class}} {% else %} mdl-cell--12-col {% endif %}">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <div class="mdl-card__media mdl-color-text--grey-50 {% if post.banner %} banner {%if post.bannersize == 'large' %} banner-lrg {% endif %} {% endif %}"
              {% if post.banner%} style="background: url('/images/{{ post.banner }}') center" {% endif %}>

@@ -1,0 +1,42 @@
+.about-me-card.mdl-card {
+  background: url('http://www.gravatar.com/avatar/6b19907277eff11f1827addbcab46413?s=600');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .mdl-card__actions {
+    background: rgba(1, 1, 1, 0.6);
+  }
+  .mdl-card__title {
+    align-items: flex-start;
+  }
+  .mdl-card__title > h4 {
+    margin-top: 0;
+  }
+  .mdl-card__actions {
+    display: flex;
+    box-sizing:border-box;
+    align-items: center;
+
+    .mdl-button {
+      color: black;
+    }
+  }
+
+}
+
+
+
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  background-size: 50%;
+  border-radius: 22px;
+}
+
+.avatar-pascal {
+  background: url("http://www.gravatar.com/avatar/6b19907277eff11f1827addbcab46413?s=200");
+  background-size: contain;
+  background-position: center;
+}

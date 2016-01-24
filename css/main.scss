@@ -27,15 +27,22 @@
 //$on-palm:          600px;
 //$on-laptop:        800px;
 
+$text-padding-v: 16px;
+$text-padding-h: 35px;
+$theme-color-1: rgb(64,196,255);
+$theme-font-color: #757578;
 
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
-        "github",
+        "github_badge",
         "navigation",
-        "highlight"
+        "highlight",
+        "statictext",
+        "specials",
+        "loading"
 ;
 
      
