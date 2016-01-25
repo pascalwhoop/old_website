@@ -26,6 +26,15 @@
 }
 
 
+/*For Images in Markdown*/
+p.center-small{
+  height: 300px;
+  text-align: center;
+  img{
+    max-height:100%;
+  }
+}
+
 
 
 .avatar {
@@ -39,4 +48,11 @@
   background: url("http://www.gravatar.com/avatar/6b19907277eff11f1827addbcab46413?s=200");
   background-size: contain;
   background-position: center;
+}
+
+.me-circle {
+  border-radius: 50%;
+  width: 150px;
+  float: right;
+  margin: 24px 0 24px 24px;
 }
