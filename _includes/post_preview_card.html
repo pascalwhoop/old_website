@@ -14,9 +14,16 @@
             <span><strong>Author: </strong>{{post.author}}</span>
             <span>{{ post.date | date: "%b %-d, %Y" }}</span>
         </div>
+        <div class="mdl-layout-spacer"></div>
+
+        <a href="{{ post.url | prepend: site.baseurl }}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+            read it!
+        </a>
+
     </div>
     <div class="left mdl-card__supporting-text mdl-color-text--grey-600">
         {{ post.summary }}
     </div>
+
 
 </div>

@@ -114,6 +114,7 @@ blockquote{
     box-sizing: border-box;
     background-size: cover;
     padding: 24px 35px;
+    display: flex;
     flex-grow: 1;
     flex-direction: row;
     align-items: flex-end;
