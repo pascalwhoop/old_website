@@ -22,23 +22,55 @@ footer{
   }
 }
 
+blockquote.style2 {
+  font: 14px/22px normal helvetica, sans-serif;
+
+}
+
+blockquote{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+  font-style: italic;
+
+  p{
+    margin:0;
+  }
+
+  &:before, &:after{
+    display:none;
+  }
+
+}
+
 @media (max-width: 512px) and (min-resolution: 1.5dppx), (max-width: 1024px) and (max-resolution: 1.5dppx) {
   body::before {
-    background-image: url('../images/bg_1024.jpg');
+    background-image: url('/images/bg_1024.jpg');
   }
 
 }
 
 @media (min-width: 513px) and (max-width: 1024px) and (min-resolution: 1.5dppx), (min-width: 1025px) and (max-width: 2048px) and (max-resolution: 1.5dppx) {
   body::before {
-    background-image: url('../images/bg_2048.jpg');
+    background-image: url('/images/bg_2048.jpg');
   }
 }
 
 @media (min-width: 1025px) and (min-resolution: 1.5dppx), (min-width: 2049px) and (max-resolution: 1.5dppx) {
   body::before {
-    background-image: url('../images/bg_2880.jpg');
+    background-image: url('/images/bg_2880.jpg');
   }
+}
+@media (max-width: 1025px){
+  .mdl-layout__drawer-button{
+    background: url('/images/bg_1024.jpg');
+    i{
+      color: white;
+    }
+  }
+
 }
 
 .blog {
@@ -82,7 +114,6 @@ footer{
     box-sizing: border-box;
     background-size: cover;
     padding: 24px 35px;
-    display: flex;
     flex-grow: 1;
     flex-direction: row;
     align-items: flex-end;
@@ -98,7 +129,6 @@ footer{
     width: 100%;
     padding: $text-padding-v $text-padding-h;
     min-height: 64px;
-    display: flex;
     align-items: left;
     box-sizing: border-box;
     min-height: 76px;
@@ -127,7 +157,6 @@ footer{
   .meta {
     box-sizing: border-box;
     padding: 16px 35px;
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
@@ -213,12 +242,13 @@ footer{
 }
 
 .meta {
+  display:flex;
   > * {
     align-items: left;
+
   }
   + .mdl-card__supporting-text {
     border: 0;
-    display: flex;
     flex-direction: column;
     img {
       max-width: 100%;

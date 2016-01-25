@@ -289,11 +289,98 @@ EAI focuses on the **technical dimension** not on the business reasoning behind 
 
 ##### 1.1 Why use EAI?
 
+* Supporting large enterprises especially useful after M&As
+* Reuse investments in existing systems 
+	* beware sunk-cost fallacy
 
-#### 2. What is component‐oriented development?
-#### 3. What are parts of a distributed architecture?
-#### 4. What different topologies and types of integration architectures exist?
-#### 5. What are components of an EAI framework?
-#### 6. What is message‐oriented middleware?
-#### 7. How do different architectures differ from each other, and what is their relationship to each other?
-#### 8. What are recent trends in EAI?
+#### 2. What is component‐oriented development?
+
+*A concept which breaks a desired system down into several separate components which can be individually developed. Each component defines its communication approach with other components and publishes this. These are called **interfaces** and are the basis of communication between components. Often there are interface **best practices** or **standards** which cause a homogenous interface structure among components.*
+
+A **component** includes a set of *interfaces*, *requirements to the environment* and its *executable code*.
+
+##### 2.1 Whats the difference between Components and Objects?
+
+components can be implemented using objects or any other concept. Objects are a programming structure paradigm while components are architectural level entities.
+ 
+##### 2.2 What are component frameworks and component models?
+
+A component framework is a wrapping environment for components. It defines a common structure all components must have and then helps to use the components in this environment. A component model are rules, standards and conventions used by the component developer to ensure a common structure where possible. 
+
+##### 2.3 What is the difference between interfaces & messages?
+
+Interfaces allow runtime and compilation time type checking. Are usually used for intra-program and intra-server communication. Client-Server architecture  
+
+#### 3. What are parts of a distributed architecture?
+
+**Interfaces**: Define the IN and OUTput of a component. An interface has access points and describes how to interact with these points. It also describes what is returned depending on the data passed to the access points. It serves as a **contract**. This also enables the replacement of the **implementation** without changing the contract or interface. On the other hand it allows to add more functionality be extending the interface and writing new implementation modules without touching the already created ones. 
+
+* Interfaces don't include metadata such as latency, security, quality of implementation. Only describes a way of calling it and what is returned. 
+
+**Late Binding**: Embed the location of the resource in the code reduces flexibility. Instead a name-address concept is used to allow runtime-dependent resolution. Similar to URL-IP-DNS, this allows load-balancing, moving, replacement, ...
+
+**Location Service**: Resolves the Name-Address Link
+
+**Protocol**: A *language*, both systems agree on to communicate the data. Usually there is a single base protocol that all systems support (within the *system landscapes* boundaries)
+
+#### 4. What different topologies and types of integration architectures exist?
+
+Topologies: 
+
+* Hub-spoke
+* Bus
+* Point to point
+
+Layers: 
+
+* Data
+* Model
+* View
+
+##### 4.1 What are pro's and cons for each topology?
+
+**Point2Point**: Is very easy and fast to implement and usually the best approach for small scenarios and systems. However, it causes a very tight coupling among the components with many interfaces (each component defines 1-n for 1-n components around it). Also once it grows too large, its unbearbale to manage. 
+
+**Bus**: Very scalable, one interface per system. However there's a big overhead for coordination the Bus is equivalent to a single point of failure (can be solved with a redundant active-passive backup). 
+
+**Hub-Spoke**: Few interfaces (same as Bus), extension is very easy, but again single point of failure & hub → potential bottleneck
+
+##### 4.2 What is the difference between a Hub and a Bus?
+
+>The key difference between hub/spoke and bus topology is that for the bus architecture, the integration engine that performs message transformation and routing is distributed to the application adapters rather than centralizing it to a single 'hub'.
+
+Hub/Spoke: The Hub is the single centralized broker system which takes care of the transformation and routing. This affects scalability.
+
+Bus: the load of data transformation and routing is carried out by the 'adapters' at each spoke systems' entry into the bus.  Here the bus is more of a messaging conduit serving the spoke systems without having the pressure of middleware tasks (data transform & routing).
+
+[source](https://www.quora.com/What-is-the-difference-between-hub-spoke-vs-ESB-in-SOA)
+
+##### 4.3 Describe SOA
+
+#### 5. What are components of an EAI framework?
+
+![](/images/2016-01-23-erp-master-information-systems-uzk-summary/5.png)
+
+**Adapters:** allow communication with specific applications. 
+
+**Middleware / Message Mgmt**: Briding differences between applications, performing transactions, distribution of messages, transformations.
+ 
+ **Process Management:** Basically BPM layer
+ 
+ **Meta Database and additional services**: Administration of central data and configurations, identity, monitoring
+
+##### 5.1 What are differentiation characteristics of the middleware component in an EAI framework?
+
+* Synchronous or asynchronous communication
+* function- object- or service oriented.
+
+#### 6. What is message‐oriented middleware?
+
+* Asynchronous communication
+* Implementation of queuing systems to assure message delivery
+* load distribution
+* independent of system or implementation, as long as system speaks protocoll. 
+
+#### 7. How do different architectures differ from each other, and what is their relationship to each other?
+
+#### 8. What are recent trends in EAI?
