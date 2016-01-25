@@ -6,6 +6,7 @@ categories: academic
 tags: erp university bpm erp iis
 banner:
 bannersize:
+hasmath: true
 author: Pascal Brokmeier
 summary: A summary of the slides for the course ERP during the M.Sc. Information Systems winter semester 2015/16 at the University of Cologne
 ---
@@ -215,18 +216,84 @@ the CU of the process is again the one of the bottleneck resource pool
 
 **To improve**: 
 
-* Eliminate activities
-* Work in parallel
-* increase efficiency
+* Abstract
+	* Eliminate activities
+	* Work in parallel
+	* increase efficiency
+* formula / model based
+	* reduce: flowtime, inventory, cost
+	* increase: throughput rate, quality
+
+**Role of IT**
 
 IT can help in several ways. It can help transfer data instantaneous instead of physically transferring it, causing a reduction in NVAA activity time → increased process quality. It can also enable coordination of actors to allow concurrency and therefore reducing the length of the critical path. Also it can help eliminate activities like controlling and validation steps by automated quality controls.
+
+To improve an overall process, the bottlenecks capacity need to be improved. A good process is one that has a good performance which means a good relative financial measure. E.g. ROI
 
 ### Other notes
 
 It is a common pattern to either improve a process through making it more *cost-effective* or by making it more *responsive*. 
-Over time, the reasons for competitive advantage have changed. Before the 60s, economies of scale were the primary source of competitive advantage. Mass production without customising were 
---- 
+
+Over time, the reasons for competitive advantage have changed. Before the 60s, economies of scale were the primary source of competitive advantage. Mass production without customising were.
+
+Business Processes are positioned on multiple layers of an organisation. However the executable processes (mostly modelled using BPMN) are commonly found in the operational layer, not the organisational layer. Here, value chain diagrams only describe the abstract concepts due to lack of instrumentalisation. 
+
+{:.center-small}
+![](/images/2016-01-23-erp-master-information-systems-uzk-summary/4.png)
+
+#### Dumas (2013) 6 steps of BPM engagement
+
+1. Identification
+2. Discovery (as-is)
+3. Analysis
+4. (Re)-Design
+5. Implementation
+6. Monitor/Control
+
+Dumas separates the process environment of organisations into three levels. 1. Process Landscape (strategic), 2. Abstract Process Models (tactic) and Detailed Process Models (BPMN, operational
+
+IT is being used to improve steps 5 & 6 by virtually representing the process and then using adequate measures to identify bottlenecks, and improve the process.
+
+#### Walmart example
+
+Strategy: Walmart wants to give quality products at competitive prices.
+
+Operations strategy goals: Reduce flow times (T) and inventory levels (I)
+
+Results: Inventory turned over twice a week (average every 2 weeks), improved sales per square foot
+
+---- 
 
 ## Questions for Prof. Rosenkranz
 
 1. Why is the Wonder Shed Inc example concluding I<sub>w</sub>/R = T<sub>w</sub> ? If 16,5 units/h are produced and a total of 80 are in the process (+ 5 in each stage?) then shouldn't 80/ 0,275 = T and ≠ T<sub>w</sub>?
+
+
+---
+
+## Enterprise Application Integration
+
+## Readings / Papers
+
+* Motiwalla and Thompson (2012), Chapters 3 & 4 
+* Weske (2012), Chapter 2 
+* Tanenbaum and Van Steen (2007), Chapters 1‐4
+
+### Questions
+
+#### 1. What is enterprise application integration?
+
+*EAI is the process of making several individual applications and systems in an organisation work together. This can be done in several ways, the most common pattern being integrating 3-tier architectures through one of the three layers.*
+
+EAI focuses on the **technical dimension** not on the business reasoning behind the decision (as in BPM)
+
+##### 1.1 Why use EAI?
+
+
+#### 2. What is component‐oriented development?
+#### 3. What are parts of a distributed architecture?
+#### 4. What different topologies and types of integration architectures exist?
+#### 5. What are components of an EAI framework?
+#### 6. What is message‐oriented middleware?
+#### 7. How do different architectures differ from each other, and what is their relationship to each other?
+#### 8. What are recent trends in EAI?

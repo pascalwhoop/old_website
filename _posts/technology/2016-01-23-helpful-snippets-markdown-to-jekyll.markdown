@@ -6,6 +6,7 @@ categories: technology
 tags: jekyll markdown shell
 banner:
 bannersize:
+hasmath: true
 author: Pascal Brokmeier
 summary: A bunch of snippets and regex stuff to help me move files automatically after I am done summarising university classes.
 ---
