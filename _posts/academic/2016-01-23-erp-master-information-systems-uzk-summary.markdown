@@ -409,9 +409,32 @@ specifies the following 5 components:
  * Precondition environment state
  * Postcondition environment state
  * Error handling in case of breakdown
+ 
+##### 7.1 What are the three core components of a SOA according to Weske?
+
+* Service provider
+* Service requester
+* Service registry
+
+##### 7.2 Name a few benefits of a SOA environment
+
+* Location independent of business logic
+* reuse of logic and services easily
+* Service can exist anywhere (message based communication over internet protocols)
+* Runtime search and usage of services possible
+
+##### 7.3 Name some drawbacks of a SOA environment
+
+* Performance can be sketchy
+* High cost to implement, very complex base-setup
 
 #### 8. How do different architectures differ from each other, and what is their relationship to each other?
 
 Architectures
 
 #### 9. What are recent trends in EAI?
+
+* Webservices using REST Endpoints and API Management
+* Single-Sign-On services using identity providers such as Facebook or Google
+* Cloud based hosting and SaaS, instead of big license packages
+    * Scenarios include: Load-Peaks, Flexible fast scaling growth, temporary ressources 
