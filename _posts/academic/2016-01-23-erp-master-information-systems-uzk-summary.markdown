@@ -239,8 +239,8 @@ Over time, the reasons for competitive advantage have changed. Before the 60s, e
 
 Business Processes are positioned on multiple layers of an organization. However the executable processes (mostly modelled using BPMN) are commonly found in the operational layer, not the organizational layer. Here, value chain diagrams only describe the abstract concepts due to lack of instrumentalisation. 
 
-{:.center-small}
-![](/images/2016-01-23-erp-master-information-systems-uzk-summary/4.png)
+
+![](/images/2016-01-23-erp-master-information-systems-uzk-summary/4.png){:height="400px" .center}
 
 #### Dumas (2013) 6 steps of BPM engagement
 
@@ -498,7 +498,11 @@ Architectures
 
 #### 19. What is the role of change management in the ERP life cycle?
 
+Communicate all important information to involved people. Inform users about reasons and provide training. 
+
 #### 20. List the major differences between the ERP life cycle and SDLC.
+
+**What the slides claim:** the ERPLC is considered equivalent to the more abstract situation of buy before make. So the four dimensions *goals, analysis, design and implementation* are aligned with purchasing and modifying software products. 
 
 #### 21. What are the components of an ERP system?
 
@@ -568,26 +572,67 @@ Significant savings are possible through negotiations and specifications of requ
 
 #### 34. Why is the readiness process so important to an ERP implementation?
 
+The readiness process synchronises the distributed teams state to ensure the overall project meets the deadline. All subteams are fairly separated from each other due to the components based project setup. Although the PMO coordinates all teams, a **detailed check of what is done and what is missing** helps to restructure the ressource pool (mainly developers and specialists) towards critical open issues. 
+
 #### 35. What project areas need to be assessed in a readiness process?
+
+* testing, infrastructure, services, support, training, development of custom modules, customisation
 
 #### 36. What is included (and not included) during the stabilisation timeframe?
 
+The stabilisation timeframe occurs after all data migration is complete, all training has been completed and staff starts using the new system in a productive environment. Although training was received, inefficiences due to new, uncommon products are to be expected and subject specialists should be available to assist users with the new systems. IT staff closly monitors the infrastructure to evaluate possible bottlenecks and find optimal instrumentalisation for automated monitoring.
+
 #### 37. Why is the knowledge transfer important to the long-term stability of the ERP system?
 
-#### 38. What are the five areas addressed in postproduction support?
+Most specialists involved during the implementation of the system are usually from outside consulting companies or the vendor itself. To minimise costly support cases with the vendor, a high level of expertise about the new system should also be developed within the company. All knowledge should be collected in one central, openly available, repository (like a wiki or some other knowledge management platform)
+
+#### 38. What are the five areas addressed in <del>postproduction</del> post-implementation / production support?   
+
+In the slides there are 6..
+
+* Training
+* Go-Live Support
+* Data Validation / Correction (2)
+* Patching Fixing
+* Implementation of new Features
 
 #### 39. What is the role of a project manager and program manager?
 
+A **project manager** has a single team to manage and is responsible for a specific project. 
+
+A **program manager** coordinates multiple projects to ensure achievement of the business goals. The program manager could possibly be a synonym for the **project executive**
+
+![](/images/2016-01-23-erp-master-information-systems-uzk-summary/6.png){: .center height="400px"}
+
 #### 40. What are the skills, knowledge, and abilities required to be a project manager?
+
+A project manager needs to have sufficient technical skills to lead his/her team concerning the tasks they have to complete. Also above-average social skills are required as are for any role where a person has to not only be part of team but lead a team.
+
+*TBH this is a very open questions and can be answered in 2-200 lines*
 
 #### 41. Name five critical success factors and why they are important to the success of a project.
 
+> *These 5 points are taken from the slides with comments by me. These should be taken with a grain of salt since I'm a bit of a realist*
+
+* **Decision Making Process**: Slides call for a predefined process. It can however be discussed that a rigid process is better than intuitive working but well proven leaders.
+* **Project Scope**: A fixed scope describing the goal of the project to ensure the overall work doesn't constantly have to change direction. While small teams may work agile, discovering ultimate requirements as they go, the overall project goal should be obvious and clearly defined from the beginning. 
+* **Teamwork**: Focus especially on working with externals. Soft-Skills...
+* **Change Management**: Do a little propaganda for the project, making everybody be on-board with it to ensure everybody works helps out instead of working against the goal. 
+* **Implementation and Executive Team**: Executive Management support.. But then any project is more likely to be successful if Top Management endorses the plans. And a good implementation team is always better than a bad one..
+
 #### 42. What role can the company executives play in an implementation?
 
+Constantly communicate how important the project is, ensure sufficient funds and manpower to enable the project managers to set up efficient teams. Enable the PMO to work effectively by providing proactive assistance instead of being passive.
+
 #### 43. What is “scope creep” and why is it important to manage during an ERP implementation? 
+
+Scope creep is a common situation of changing goals which aren't properly documented. To counter scope creep, a proper process should be set up to correctly evaluate, document and communicate changes in scope. 
 ----
 
 ## Questions for Prof. Rosenkranz
 
 1. Why is the Wonder Shed Inc example concluding I<sub>w</sub>/R = T<sub>w</sub> ? If 16,5 units/h are produced and a total of 80 are in the process (+ 5 in each stage?) then shouldn't 80/ 0,275 = T and ≠ T<sub>w</sub>?
+2. Why is it called _postproduction support_? That suggests support AFTER the product was used in production which is after 10 or so years? see [Wiki](https://en.wikipedia.org/wiki/Production_support)
+3. Why is the question 38 Chapter 5 saying "the 5 areas" when ths slides specify 6? Also this suggests hard-coded memorizing rather than learning by understanding...
+4. Chapter 5, 101: Why do ERP systems not require hardware? Why is integration, adaptation and customization (that goes beyond tweaking some parameters) not included in the "Implementation" phase?
 
