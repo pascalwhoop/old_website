@@ -20,8 +20,19 @@ layout: default
                 <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}
                     {% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
             </div>
+            <div class="mdl-layout-spacer"></div>
+
+            {% if page.hascsvdownload %}
+            <button onclick="downloadCsv()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                Download Anki cards as CSV
+            </button>
+            {% endif %}
+
+
+
+            <!--
             <div class="section-spacer"></div>
-            <!--<div class="meta__favorites">
+            <div class="meta__favorites">
                 425 <i class="material-icons" role="presentation">favorite</i>
                 <span class="visuallyhidden">favorites</span>
             </div>
@@ -34,7 +45,7 @@ layout: default
                 <span class="visuallyhidden">share</span>
             </div>-->
         </div>
-        <div class="mdl-color-text--grey-700 mdl-card__supporting-text">
+        <div class="mdl-color-text--grey-700 mdl-card__supporting-text" id="postContentWrapper">
             {{ content }}
         </div>
         <div class="mdl-color-text--primary-contrast mdl-card__supporting-text comments">

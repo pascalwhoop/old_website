@@ -7,6 +7,7 @@ tags: erp university bpm erp iis
 banner:
 bannersize:
 hasmath: true
+hascsvdownload: true
 author: Pascal Brokmeier
 summary: A summary of the slides for the course ERP during the M.Sc. Information Systems winter semester 2015/16 at the University of Cologne
 ---
@@ -309,7 +310,9 @@ A component framework is a wrapping environment for components. It defines a com
 
 ##### 2.3 What is the difference between interfaces & messages?
 
-Interfaces allow runtime and compilation time type checking. Are usually used for intra-program and intra-server communication. Client-Server architecture  
+**Interfaces** allow runtime and compilation time type checking. Are usually used for intra-program and intra-server communication.
+   
+**Messages** are used for inter-system communication. They have no type-checking and are, compared to interfaces, quiet slow (due to communication overhead, queuing etc)
 
 #### 3. What are parts of a distributed architecture?
 
@@ -355,7 +358,6 @@ Bus: the load of data transformation and routing is carried out by the 'adapters
 
 [source](https://www.quora.com/What-is-the-difference-between-hub-spoke-vs-ESB-in-SOA)
 
-##### 4.3 Describe SOA
 
 #### 5. What are components of an EAI framework?
 
@@ -379,8 +381,37 @@ Bus: the load of data transformation and routing is carried out by the 'adapters
 * Asynchronous communication
 * Implementation of queuing systems to assure message delivery
 * load distribution
-* independent of system or implementation, as long as system speaks protocoll. 
+* independent of system or implementation, as long as system speaks protocoll.
+* Can simulate synchronous communication although asynchronous
 
-#### 7. How do different architectures differ from each other, and what is their relationship to each other?
+##### 6.2 What roles can a MOM take?
 
-#### 8. What are recent trends in EAI?
+* It can hide the receiver from the sender (sender only knows name but not address)
+* It can perform delivery assurances
+* It can perform transaction handling
+
+##### 6.2 Drawbacks of MOM?
+
+* Single point of failure → needs high-availability tech behind it
+* Can be bottleneck
+* Testing is difficult
+    * can be OK with API Management + automated stub/mock-based testing
+ 
+#### 7 What is SOA? What are the 5 components of a service specification?
+
+A Software development model based on a contract between consumer (client) and provider (server). It is more a concept rather than a technology and also often considered a buzzword  
+
+
+specifies the following 5 components:
+ 
+ * Functional description of the service
+ * Input requirements and output specifications
+ * Precondition environment state
+ * Postcondition environment state
+ * Error handling in case of breakdown
+
+#### 8. How do different architectures differ from each other, and what is their relationship to each other?
+
+Architectures
+
+#### 9. What are recent trends in EAI?

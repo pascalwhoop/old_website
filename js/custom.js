@@ -13,7 +13,7 @@ function switchLoadingDisplay() {
 }
 
 
-var onLoad = function () {
+function onLoad() {
     switchLoadingDisplay();
 
     var mainScrollArea = document.getElementsByClassName('mdl-layout')[0];
@@ -37,7 +37,24 @@ var onLoad = function () {
         }
     });
 
-};
+}
 
+function downloadCsv() {
+    if (saveAs) {
+        var data = document.getElementById("postContentWrapper").innerHTML;
+        //var regex = /<h4.*>(.*)<\/h4>([\S\s]*?)(?=\<h4|\<\/div|$)/;
+        var h4s = $("#postContentWrapper").find("h4");
+        var h4s = $("#postContentWrapper").find("h4");
+        h4s.each(function (index, obj) {
+            var frontside = obj.text();
+            var backside = obj.nextUntil("h4");
+
+        })
+    }
+    var firstQuestion = h4s.first();
+    //var firstQuestion.nextUntil("h4")
+
+
+}
 window.onload = onLoad;
 

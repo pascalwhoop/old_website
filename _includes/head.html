@@ -25,6 +25,7 @@
     <script src="/js/custom.js"></script>
 
     <!-- include a bunch of stuff like styles, javascript externals etc-->
+    <script type="text/javascript" src="/js/jquery-2.2.0.min.js"></script>
     <link rel="stylesheet" href="/css/mdl/material.deep_orange-light_blue.min.css">
     <script src="/css/mdl/material.min.js"></script>
     <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
@@ -36,10 +37,13 @@
     <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
     {% endif %}
 
-    {% if page.is_post %}
-    <!-- Genius annotation -->
-    <script async src="//genius.codes"></script>
-    <!--<script async defer src="https://hypothes.is/embed.js"></script>-->
+    {% if page.is_post == "true" %}
+        <!-- Genius annotation -->
+        <!--<script async src="//genius.codes"></script>-->
+        <!--<script async defer src="https://hypothes.is/embed.js"></script>-->
+    {% endif %}
+    {% if page.hascsvdownload %}
+    <script src="/js/fileSaver.min.js"></script>
     {% endif %}
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

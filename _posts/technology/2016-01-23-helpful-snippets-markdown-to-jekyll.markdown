@@ -79,3 +79,11 @@ it doesn't happen anymore and I can always keep going where I left off when i pr
 <sub>$1</sub>
 {% endhighlight %}
 
+
+**parse markdown and make it usable for Ankidroid**
+
+assuming we have markdown written with headline level 4 or 5 as questions and answers afterwards, this regex can select and group our texts so we can convert it to a csv:
+
+{% highlight bash %}
+#{4,5}(.*)([^#]*)
+{% endhighlight %}
