@@ -627,6 +627,7 @@ Constantly communicate how important the project is, ensure sufficient funds and
 #### 43. What is “scope creep” and why is it important to manage during an ERP implementation? 
 
 Scope creep is a common situation of changing goals which aren't properly documented. To counter scope creep, a proper process should be set up to correctly evaluate, document and communicate changes in scope. 
+
 ----
 
 ## Questions for Prof. Rosenkranz
