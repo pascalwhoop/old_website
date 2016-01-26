@@ -43,18 +43,54 @@ function downloadCsv() {
     if (saveAs) {
         var data = document.getElementById("postContentWrapper").innerHTML;
         //var regex = /<h4.*>(.*)<\/h4>([\S\s]*?)(?=\<h4|\<\/div|$)/;
-        var h4s = $("#postContentWrapper").find("h4");
-        var h4s = $("#postContentWrapper").find("h4");
-        h4s.each(function (index, obj) {
-            var frontside = obj.text();
-            var backside = obj.nextUntil("h4");
+        var headings = $("#postContentWrapper").find("h4, h5");
 
-        })
+        var cards = [];
+        headings.each(function (index, obj) {
+            var back= $(this).nextUntil("h5, h4, h3, h2, h1");
+
+            var card = {
+                frontside: $(this).text(),
+                backside: getStringFromJQueryObjects(back)
+            };
+            cards.push(card);
+        });
+        //displayInWebsite(cards);
+        var blob = new Blob([buildCSVContent(cards)], {type: "text/plain;charset=utf-8"});
+        saveAs(blob, "cards.csv");
     }
-    var firstQuestion = h4s.first();
-    //var firstQuestion.nextUntil("h4")
-
 
 }
+
+function getStringFromJQueryObjects(jQobjects){
+    var asText = "";
+    jQobjects.each(function(index, object){
+        asText += $(this).prop('outerHTML');
+    });
+    return asText;
+}
+
+function displayInWebsite(dataArray) {
+    //array of objects with "frontside" and "backside"
+    //make our outlet visible
+    var outlet = document.getElementById("csvOutlet");
+    outlet.style.display = "block";
+    var table = $("#csvOutlet table");
+    dataArray.map(function(val, index, array){
+        var buf = "<tr><td>" + val.frontside + "</td>" + "<td><code>" + val.backside+ "</code></td></tr>";
+        table.append(buf);
+    });
+}
+
+function buildCSVContent(cards){
+    var buf = "frontside, backside\n";
+    cards.map(function(val, index, arary){
+        val.backside = val.backside.replace(/(?:\r\n|\r|\n)/g, '');
+        val.backside = val.backside.replace(/(")/g, "'");
+        buf += "\"" + val.frontside + "\",\"" + val.backside + "\"\n";
+    });
+    return buf;
+}
+
 window.onload = onLoad;
 
