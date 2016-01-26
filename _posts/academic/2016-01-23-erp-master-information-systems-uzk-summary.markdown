@@ -508,27 +508,63 @@ Architectures
 
 #### 23. What are third-party products and why are they needed?
 
+*Third-party products are components, applications or systems that are offered by vendors to purchase, license or rent by organizations to solve certain tasks. Typical examples are office software, company chats, forums, wikis, email servers, building entrance authorisation system, ... They aren't necessarily needed but often it's just smarter to purchase such systems from specialist vendors rather than redeveloping them yourself (reinvent the wheel...)*
+
 #### 24. What are the pros and cons of implementing a system without customisation?
 
-Without any customisation, a system might be quickly implemented and the project risk is much lower, however, either the entire business has to adapt to the systems default process structures or a mismatch between the actual processes and the implemented ones will exist. Also without customisation, a company might loose its competitive edge over other companies. 
+*Without any customisation, a system might be quickly implemented and the project risk is much lower, however, either the entire business has to adapt to the systems default process structures or a mismatch between the actual processes and the implemented ones will exist. Also without customisation, a company might loose its competitive edge over other companies.* 
 
 #### 25. Why are there differences between a transactional and reporting database?
 
 #### 26. What are the steps in purchasing an ERP?
 
+1. Vendor research to *see whats possible*
+2. Define requirements
+3. request information from vendors
+4. Match & prefilter
+5. Request for bids
+6. Detailed Analysis
+    * Technical: complexity, compatibility, future-proofness → costs
+    * business: cost of ownership, benefits
+7. contract negotiations
+
 #### 27. Who generally needs to be involved in the ERP selection process and why?
+
+* Quality Manager: To ensure both sides abide to the contract 
+* Program Manager: Will later lead the transition to ERP
+* Management: Be part of negotiations and demonstrations, decision makers, must back the project.
 
 #### 28. What is total cost of ownership (TCO) and why should it be a part of the ERP selection process?
 
+TCO is an estimate for the total costs arising when an organization decides to purchase or in-house develop a product. The TCO includes amongst the license and hardware costs also the training, introduction, insurance, audit, testing, ... costs. It tries to include all costs, direct and indirect, caused going forward with the one or the other alternative.
+
 #### 29. What are the key components in the contract negotiation and licensing?
+
+* Product to purchase and maintenance / long term support terms
+* Services for implementation phase
+* Deliverables + Dates
+* Customer **must** have *acceptance authority*
 
 #### 30. Why is it important in the request for bid process to make the vendors reply in a specified format?
 
+To allow objective comparisons between vendors and simplify the comparison process afterwards. This should, if possible, be done using a predefined evaluation model to minimize biased results. 
+
 #### 31. Why is communication important in this phase?
+
+Keeps everyone involved, informs the entire staff about ongoing negotiations. Most staff isn't involved yet but will feel included. 
+*Also informing staff about offers by vendors allows for feedback from specialists in certain areas. If vendors supply misleading, marketing-biased information, specialists will be able to uncover such issues.* 
 
 #### 32. What is the difference between RFI and RFB?
 
+[[from wikipedia]](https://en.wikipedia.org/wiki/Request_for_information)
+
+A request for information (RFI) is a standard business process whose purpose is to collect written information about the capabilities of various suppliers. Normally it follows a format that can be used for comparative purposes.
+
+*A RFB is a request from the purchasee to the vendor to make an offer concerning both cost and products and/or service supplied.*
+
 #### 33. What are the benefits of a bidding process to purchase an ERP? 
+
+Significant savings are possible through negotiations and specifications of required modules to ensure that only those modules which are required are purchased and licensed. Also if inclusion of office, technology and legal team is done right, market standards become transparent and adequate expectations towards vendors are developed.
 
 #### 34. Why is the readiness process so important to an ERP implementation?
 
