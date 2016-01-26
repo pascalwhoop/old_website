@@ -15,7 +15,7 @@ summary: A summary of the slides for the course ERP during the M.Sc. Information
 # ERP Summary
 
 
-This summary will be written along the lines of the review questions of each slide deck. I will try and answer all questions of the slide decks and by this, summarize each chapter. To differentiate between my already present knowledge and the knowledge I yet have to build up, I'll always try and answer a question by myself first and then research in the slides. My own answers will be written in *italic text*.
+This summary will be written along the lines of the review questions of each slide deck. I will try and answer all questions of the slide decks and by this, summarise each chapter. To differentiate between my already present knowledge and the knowledge I yet have to build up, I'll always try and answer a question by myself first and then research in the slides. My own answers will be written in *italic text*.
 
 ---
 
@@ -32,14 +32,14 @@ This summary will be written along the lines of the review questions of each sli
 
 *Functional silos are sets of IT systems only available to a limited number of departments or employees in companies. However they are not restricted to these people due to governance or policies but merely due to lack of IT system integration. Other departments would often benefit from the usage of these systems, had they access to them. This also causes data and knowledge to be duplicated and stored multiple times at different locations without any process which keeps these instances in sync.* 
 
-* Silos are basically compartmentalized operating units isolated from their environment.
-* They developed through the separation of companies into Planning, Organizing, Staffing, Directing, Coordinating, Reporting and Budgeting (a common pattern in the 20th century) and the vertical dimension which was added, separating a company in strategy, tactical and operational layers, causing the company structure to be seen as a matrix.
+* Silos are basically compartmentalised operating units isolated from their environment.
+* They developed through the separation of companies into Planning, Organising, Staffing, Directing, Coordinating, Reporting and Budgeting (a common pattern in the 20th century) and the vertical dimension which was added, separating a company in strategy, tactical and operational layers, causing the company structure to be seen as a matrix.
 
 ![](/images/2016-01-23-erp-master-information-systems-uzk-summary/1.png)
 
-#### 2. What is the relationship between organizational functional silos and IS functional silos?
+#### 2. What is the relationship between organizational functional silos and IS functional silos? 
 
-*Over time, IS systems were implemented for numerours departments and company layers. This caused a whole range of IS products and systems to be used in companies. Despite the inital benefits of these systems, organisations started being confronted with bottlenecks due to the lack of integration between those systems.*
+*Over time, IS systems were implemented for numerous departments and company layers. This caused a whole range of IS products and systems to be used in companies. Despite the inital benefits of these systems, organizations started being confronted with bottlenecks due to the lack of integration between those systems.*
 
 #### 3. List the horizontal and vertical levels of systems that exist in organizations.
 
@@ -52,7 +52,7 @@ This summary will be written along the lines of the review questions of each sli
 
 Data integration just combines all data pools in a company to make sure no redundant data is present and everybody is working on the same set of information. This could be implemented through a large common database that all applications must use to store and receive data.
 
-Functional integration analyses different functions performed by both systems and people to find common structures and duplications. Reporting tasks e.g. could be found in several departments and can be unified and performed by one cross-functional unit which will then perform these tasks for all departments. This level of integration is the first one that has actual influences on the organisational structure of a company. 
+Functional integration analyses different functions performed by both systems and people to find common structures and duplications. Reporting tasks e.g. could be found in several departments and can be unified and performed by one cross-functional unit which will then perform these tasks for all departments. This level of integration is the first one that has actual influences on the organizational structure of a company. 
 
 The process integration dimension focuses on the business process at hand. While functional integration doesn't respect the perspective of linked functions interacting with each other or being chained together, the process focuses on cross-functional chains which require both functions and data sets from several parts or departments of the company.   
 
@@ -80,10 +80,10 @@ Logical integration concerning the **data dimension** of integration means the s
 
 #### 9. Describe four types of enterprise applications.
 
-* ERP: Try to be one giant system that includes all sorts of tasks which are common among most businesses independent of their industry. Also, often industry specific functions are included. They span across the organisation to coordinate processes and ensure a common data model across the firm. 
-* SCM: Supply chain management systems take care of the logistics, resources and operations of production. They are usually used in organisations that produce physical products and can also span across multiple company borders to improve an integrated supply chain. 
-* CRM: Manage a companies approach towards customers. It gives a unified overview over all channels, a customer can contact the organisation, synchronises the interaction points within the firm (multiple departments), analyses the customers interests, demands, buying habits a.o. to improve sales, customer retention and experience. 
-* KM: Knowledge Management systems are used to ensure knowledge is spread across an organisation and used wherever useful. 
+* ERP: Try to be one giant system that includes all sorts of tasks which are common among most businesses independent of their industry. Also, often industry specific functions are included. They span across the organization to coordinate processes and ensure a common data model across the firm. 
+* SCM: Supply chain management systems take care of the logistics, resources and operations of production. They are usually used in organizations that produce physical products and can also span across multiple company borders to improve an integrated supply chain. 
+* CRM: Manage a companies approach towards customers. It gives a unified overview over all channels, a customer can contact the organization, synchronises the interaction points within the firm (multiple departments), analyses the customers interests, demands, buying habits a.o. to improve sales, customer retention and experience. 
+* KM: Knowledge Management systems are used to ensure knowledge is spread across an organization and used wherever useful. 
 
 #### 10. What is the role of ERP systems in system integration?
 
@@ -91,7 +91,7 @@ ERP systems primarily solve the data integration dimension and also serve as a p
 
 #### 11. What is the role of SCM systems and CRM systems in system integration?
 
-They serve to both streamline the production process towards an optimal process with minimal bufferings and short cycles as well as streamline the customer experience for customers coming into contact with the organisation. CRM also analyse the customers behaviour to improves sales and create a better, holistic view of the customer for the firm. 
+They serve to both streamline the production process towards an optimal process with minimal bufferings and short cycles as well as streamline the customer experience for customers coming into contact with the organization. CRM also analyse the customers behaviour to improves sales and create a better, holistic view of the customer for the firm. 
 
 
 ---
@@ -104,7 +104,7 @@ They serve to both streamline the production process towards an optimal process 
 
 *Models are a representation of the information system that is to be developed. However these models can describe several perspectives, such as the hardware, software, module, or component perspectives.* 
 
-TODO What does he mean? Nothing in the slides -.-
+→ still not clear what is meant by this. TODO 4 Pascal: Should consult Professor
 
 #### 2. What is a process architecture?
 
@@ -143,7 +143,7 @@ Process modelling is done during the process design phase, which uses both the a
 
 #### 6. What is the relationship between business processes, business process models, and enterprise applications?
 
-* Business processes are the in-fact activities that are taking place in organisations, independent on wether they are modelled or not. The models then are a formal representation of these processes and are used to both analyse and improve or change the ongoing processes. Enterprise applications then present a platform to execute and analyse these processes.
+* Business processes are the in-fact activities that are taking place in organizations, independent on wether they are modelled or not. The models then are a formal representation of these processes and are used to both analyse and improve or change the ongoing processes. Enterprise applications then present a platform to execute and analyse these processes.
 
 
 ---
@@ -154,7 +154,7 @@ Process modelling is done during the process design phase, which uses both the a
 
 #### 1. What is business process management?
 
-Business process management is the definition, analysis, implementation and improvement of ongoing processes in an organisation. A business process is usually a string of activities that are directly linked to value generation. Most of the time this means theses processes are tightly connected to what customers require. 
+Business process management is the definition, analysis, implementation and improvement of ongoing processes in an organization. A business process is usually a string of activities that are directly linked to value generation. Most of the time this means theses processes are tightly connected to what customers require. 
 
 ![](/images/2016-01-23-erp-master-information-systems-uzk-summary/3.png)
 
@@ -237,7 +237,7 @@ It is a common pattern to either improve a process through making it more *cost-
 
 Over time, the reasons for competitive advantage have changed. Before the 60s, economies of scale were the primary source of competitive advantage. Mass production without customising were.
 
-Business Processes are positioned on multiple layers of an organisation. However the executable processes (mostly modelled using BPMN) are commonly found in the operational layer, not the organisational layer. Here, value chain diagrams only describe the abstract concepts due to lack of instrumentalisation. 
+Business Processes are positioned on multiple layers of an organization. However the executable processes (mostly modelled using BPMN) are commonly found in the operational layer, not the organizational layer. Here, value chain diagrams only describe the abstract concepts due to lack of instrumentalisation. 
 
 {:.center-small}
 ![](/images/2016-01-23-erp-master-information-systems-uzk-summary/4.png)
@@ -251,7 +251,7 @@ Business Processes are positioned on multiple layers of an organisation. However
 5. Implementation
 6. Monitor/Control
 
-Dumas separates the process environment of organisations into three levels. 1. Process Landscape (strategic), 2. Abstract Process Models (tactic) and Detailed Process Models (BPMN, operational
+Dumas separates the process environment of organizations into three levels. 1. Process Landscape (strategic), 2. Abstract Process Models (tactic) and Detailed Process Models (BPMN, operational
 
 IT is being used to improve steps 5 & 6 by virtually representing the process and then using adequate measures to identify bottlenecks, and improve the process.
 
@@ -263,18 +263,12 @@ Operations strategy goals: Reduce flow times (T) and inventory levels (I)
 
 Results: Inventory turned over twice a week (average every 2 weeks), improved sales per square foot
 
----- 
-
-## Questions for Prof. Rosenkranz
-
-1. Why is the Wonder Shed Inc example concluding I<sub>w</sub>/R = T<sub>w</sub> ? If 16,5 units/h are produced and a total of 80 are in the process (+ 5 in each stage?) then shouldn't 80/ 0,275 = T and ≠ T<sub>w</sub>?
-
 
 ---
 
 ## Enterprise Application Integration
 
-## Readings / Papers
+### Readings / Papers
 
 * Motiwalla and Thompson (2012), Chapters 3 & 4 
 * Weske (2012), Chapter 2 
@@ -284,7 +278,7 @@ Results: Inventory turned over twice a week (average every 2 weeks), improved sa
 
 #### 1. What is enterprise application integration?
 
-*EAI is the process of making several individual applications and systems in an organisation work together. This can be done in several ways, the most common pattern being integrating 3-tier architectures through one of the three layers.*
+*EAI is the process of making several individual applications and systems in an organization work together. This can be done in several ways, the most common pattern being integrating 3-tier architectures through one of the three layers.*
 
 EAI focuses on the **technical dimension** not on the business reasoning behind the decision (as in BPM)
 
@@ -427,6 +421,7 @@ specifies the following 5 components:
 
 * Performance can be sketchy
 * High cost to implement, very complex base-setup
+* Security specialists often required to ensure security
 
 #### 8. How do different architectures differ from each other, and what is their relationship to each other?
 
@@ -437,4 +432,126 @@ Architectures
 * Webservices using REST Endpoints and API Management
 * Single-Sign-On services using identity providers such as Facebook or Google
 * Cloud based hosting and SaaS, instead of big license packages
-    * Scenarios include: Load-Peaks, Flexible fast scaling growth, temporary ressources 
+    * Scenarios include: Load-Peaks, Flexible fast scaling growth, temporary ressources
+    * Risk of data security, lock-in effects, disucussion about interlectual property rights
+* BI, BigData, Internet of Things, Digitalization
+* 
+       
+##### 9.1 What are a few benefits of Cloud computing?
+
+* Flexible growth
+* Only pay what you need (no fixed costs)
+* focus on business value of application
+* global availability
+
+----
+
+## ERP Systems
+
+### Readings / Papers
+
+* Motiwalla and Thompson (2012), Chapters 1-7
+
+### Questions
+
+#### 1. What is necessary for the ERP implementation to be successful?
+
+*An ERP implementation affects the entire organization. Therefore Top Management must actively support the project and help communicate key facts about changes and challenges. Besides the technical perspective of 'how you implement an ERP system' the organization must also make sure all involved management commits to the changes and all personel gets adequate support and training with the new systems. The systems should be implemented together with the users to ensure optimal user acceptance which is key to allowing a stage-by-stage type of transition phase to be successful.*
+
+#### 2. What is ERP system architecture?
+
+#### 3. Why is it important to have good enterprise system architecture?
+
+#### 4. What is the role of architecture in ERP implementation?
+
+#### 5. List five of the major functional modules of ERP.
+
+* SCM
+* Finance
+* HR
+* CRM
+
+
+#### 6. Discuss the different types of ERP architectures.
+
+#### 7. List benefits and limitations of one ERP architecture.
+
+#### 8. What is service-oriented architecture and how is it different from Web services architecture?
+
+#### 9. What are the key benefits and limitations of systems integration?
+
+#### 10. What is the role of management in designing enterprise systems integration?
+
+#### 12. Briefly discuss the key phases of the SDLC methodology.
+
+#### 13. Discuss the alternate approaches of SDLC and the benefits of these alternatives.
+
+#### 14. Compare and contrast the three major ERP implementation categories.
+
+#### 15. What is ERP implementation methodology? Give examples. 
+
+#### 16. List the major tasks in the scope and commitment phase of the ERP life cycle.
+
+#### 17. List the major tasks in the analysis and design phase of the ERP life cycle.
+
+#### 18. List the major tasks in the acquisition and development phase of the ERP life cycle.
+
+#### 19. What is the role of change management in the ERP life cycle?
+
+#### 20. List the major differences between the ERP life cycle and SDLC.
+
+#### 21. What are the components of an ERP system?
+
+#### 22. Why would a company choose to implement an ERP?
+
+*To integrate all data and knowledge throughout an organization into one centralised knowledge and data state. Although the matrix structure of companies helps break complex tasks down into manageable subtasks, it caused many companies departments to limit their scope of horizon to their departments borders without keeping the whole companies goal in mind. This led to isolated knowledges isles, duplicate data stores, inefficient information sharing and coordination. ERP systems counter this trend by integrating all departments data into **one central database**. An ERP system also coordinates all of an organizations **functions** focusing on the companies overall end-to-end **processes***
+
+#### 23. What are third-party products and why are they needed?
+
+#### 24. What are the pros and cons of implementing a system without customisation?
+
+Without any customisation, a system might be quickly implemented and the project risk is much lower, however, either the entire business has to adapt to the systems default process structures or a mismatch between the actual processes and the implemented ones will exist. Also without customisation, a company might loose its competitive edge over other companies. 
+
+#### 25. Why are there differences between a transactional and reporting database?
+
+#### 26. What are the steps in purchasing an ERP?
+
+#### 27. Who generally needs to be involved in the ERP selection process and why?
+
+#### 28. What is total cost of ownership (TCO) and why should it be a part of the ERP selection process?
+
+#### 29. What are the key components in the contract negotiation and licensing?
+
+#### 30. Why is it important in the request for bid process to make the vendors reply in a specified format?
+
+#### 31. Why is communication important in this phase?
+
+#### 32. What is the difference between RFI and RFB?
+
+#### 33. What are the benefits of a bidding process to purchase an ERP? 
+
+#### 34. Why is the readiness process so important to an ERP implementation?
+
+#### 35. What project areas need to be assessed in a readiness process?
+
+#### 36. What is included (and not included) during the stabilisation timeframe?
+
+#### 37. Why is the knowledge transfer important to the long-term stability of the ERP system?
+
+#### 38. What are the five areas addressed in postproduction support?
+
+#### 39. What is the role of a project manager and program manager?
+
+#### 40. What are the skills, knowledge, and abilities required to be a project manager?
+
+#### 41. Name five critical success factors and why they are important to the success of a project.
+
+#### 42. What role can the company executives play in an implementation?
+
+#### 43. What is “scope creep” and why is it important to manage during an ERP implementation? 
+----
+
+## Questions for Prof. Rosenkranz
+
+1. Why is the Wonder Shed Inc example concluding I<sub>w</sub>/R = T<sub>w</sub> ? If 16,5 units/h are produced and a total of 80 are in the process (+ 5 in each stage?) then shouldn't 80/ 0,275 = T and ≠ T<sub>w</sub>?
+

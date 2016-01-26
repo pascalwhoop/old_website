@@ -45,6 +45,18 @@ blockquote{
 
 }
 
+/*fix for safari, it dont support min-resolution*/
+@media (max-width: 512px){
+  body::before {
+    background-image: url('/images/bg_1024.jpg');
+  }  
+}
+@media (min-width: 512px){
+  body::before {
+    background-image: url('/images/bg_2048.jpg');
+  }  
+}
+
 @media (max-width: 512px) and (min-resolution: 1.5dppx), (max-width: 1024px) and (max-resolution: 1.5dppx) {
   body::before {
     background-image: url('/images/bg_1024.jpg');
