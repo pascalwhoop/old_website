@@ -87,11 +87,11 @@ blockquote{
 
 .blog {
   .content-container, .post .mdl-card{
-    max-width: 900px;
+    /*max-width: 900px;
     padding: 0;
     width: 100%;
     margin: 0 auto;
-    flex-shrink: 0;
+    flex-shrink: 0;*/
   }
   /*.postlist .mdl-card{
     padding: 0;
@@ -141,7 +141,6 @@ blockquote{
   .mdl-card__supporting-text {
     width: 100%;
     padding: $text-padding-v $text-padding-h;
-    min-height: 64px;
     align-items: left;
     box-sizing: border-box;
     min-height: 76px;
@@ -329,3 +328,6 @@ blockquote{
   box-sizing: border-box;
 }
 
+.fixed {
+  position: fixed;
+}

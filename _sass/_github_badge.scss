@@ -2,7 +2,7 @@
  * "Fork me on GitHub" CSS ribbon v0.1.1 | MIT License
  * https://github.com/simonwhitaker/github-fork-ribbon-css
 */
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 600px) {
 
   .github-fork-ribbon-wrapper{
     display: none; }
@@ -50,7 +50,7 @@
 
   /* Set the geometry. If you fiddle with these you'll also need
      to tweak the top and right values in .github-fork-ribbon. */
-  width: 200px;
+  width: 214px;
   line-height: 20px;
 
   /* Set the layout properties */
@@ -65,8 +65,8 @@
 }
 
 .github-fork-ribbon-wrapper {
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
   position: absolute;
   overflow: hidden;
   top: 0;
@@ -101,8 +101,8 @@
 }
 
 .github-fork-ribbon-wrapper.right .github-fork-ribbon {
-  top: 42px;
-  right: -43px;
+  top: 50px;
+  right: -41px;
 
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -112,8 +112,8 @@
 }
 
 .github-fork-ribbon-wrapper.left .github-fork-ribbon {
-  top: 42px;
-  left: -43px;
+  top: 50px;
+  left: -41px;
 
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);

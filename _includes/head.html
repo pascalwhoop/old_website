@@ -33,11 +33,13 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <!-- mathJax-->
-    {% if page.hasmath %}
+    {% if page.hasmath == "true" %}
     <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
     {% endif %}
 
     {% if page.is_post == "true" %}
+    <script type="text/javascript" src="/js/toc.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <!-- Genius annotation -->
         <!--<script async src="//genius.codes"></script>-->
         <!--<script async defer src="https://hypothes.is/embed.js"></script>-->

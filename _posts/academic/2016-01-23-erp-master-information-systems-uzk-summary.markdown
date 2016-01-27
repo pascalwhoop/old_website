@@ -6,8 +6,8 @@ categories: academic
 tags: erp university bpm erp iis
 banner:
 bannersize:
-hasmath: true
-hascsvdownload: true
+hasmath: "true"
+hascsvdownload: "true"
 author: Pascal Brokmeier
 summary: A summary of the slides for the course ERP during the M.Sc. Information Systems winter semester 2015/16 at the University of Cologne
 ---
@@ -104,7 +104,6 @@ They serve to both streamline the production process towards an optimal process 
 
 *Models are a representation of the information system that is to be developed. However these models can describe several perspectives, such as the hardware, software, module, or component perspectives.* 
 
-→ still not clear what is meant by this. TODO 4 Pascal: Should consult Professor
 
 #### 2. What is a process architecture?
 
@@ -125,7 +124,7 @@ Supporting processes can be used by other processes, while core processes are di
 4. Process Implementation → Output: Executable process model
 5. Monitoring and controlling → Output: Performance and conformance insights
 
-Process modelling is done during the process design phase, which uses both the as-is model as well as the aquired insights from the analysis and is supposed to output an improved process model. It is also involved in the *as-is* modelling as well as the implementation phase, because moving from a model concept to an executable version .
+Process modelling is done during the process design phase, which uses both the as-is model as well as the aquired insights from the analysis and is supposed to output an improved process model. It is also involved in the process discovery phase as well as the implementation phase, because moving from a model concept to an executable version .
 
 #### 4. What are the main components of any business process (model)?
 
@@ -460,13 +459,20 @@ Architectures
 
 #### 2. What is ERP system architecture?
 
+* As with all IS architectures, a description of the **logical modules**, their interfaces, functionality (what, not how), their requirements and what modules they depend on
+* The **hardware components** required to enable the system to work.
+
 #### 3. Why is it important to have good enterprise system architecture?
+
+To handle complexity, especially with large enterprises, enable expansion or even M&A. Modularization is the key to handling complexity and ongoing changes to the systems landscape. 
 
 #### 4. What is the role of architecture in ERP implementation?
 
+Enable the support of a diverse set of hardware and software platforms and decrease complexity for developing departments and vendors. 
+
 #### 5. List five of the major functional modules of ERP.
 
-* SCM
+* SCM (Often Production, Purchasing, Inventory Management)
 * Finance
 * HR
 * CRM
@@ -474,21 +480,57 @@ Architectures
 
 #### 6. Discuss the different types of ERP architectures.
 
+* 3 Tier / [Web Services] architecture
+    * Model (Data Tier)
+    * Controller (Business Logic Tier)
+    * [API / Delivery Tier] → sometimes needed to support diverse client types *4th tier*
+    * View (Presentation)
+
+Older versions are the monolithic approach or client-server architectures.
+
+
 #### 7. List benefits and limitations of one ERP architecture.
+
+The 4-tier architecture offers increased flexibility to support diverse types of devices. This approach is also often called API-first, because the core enablement for supporting new devices lies in the reuse and extension of the published API endpoints. While most 3tier architectures tried to support several PCs and maybe different browser types, the 4 tier architecture tries to support all sorts of devices, independent of screen size & existence and human involvement.
 
 #### 8. What is service-oriented architecture and how is it different from Web services architecture?
 
+SOA is an architectural concept describing the combination of different service providers to create composite functions and applications. A typical SOA architecture usually also has a register which all service providers use to publish their services and consumers use to find the providers they require to solve their problems. Web services are actual technical implementations. Web services can be service providers in a SOA. SOA is a concept, webservices are a more concrete implementation concept. 
+
 #### 9. What are the key benefits and limitations of systems integration?
+
+**Duplicate**
 
 #### 10. What is the role of management in designing enterprise systems integration?
 
+Filter hyped technologies from useful ones. The architecture doesn't only influence the IT side of a business but also the organisation structure and the employees.
+
 #### 12. Briefly discuss the key phases of the SDLC methodology.
+
+Classic: Analysis, Planning, Implementation, Testing, Rollout
+
+This approach (also called waterfall model) includes first analysing the system environment, the requirements, the technology at hand, ... . Aftwards a system structure is designed, with descriptions for modules, their tasks and how they solve their problems. These modules are then implemented and tested. Once all modules work together as they're supposed to, the system is rolled out. This can also be a closed loop in which the rollout is followed by a continous maintenance, reanalyse, redesign, ... process. 
 
 #### 13. Discuss the alternate approaches of SDLC and the benefits of these alternatives.
 
+An alternative is **rapid prototyping**. Here a very primitive prototyp is developed to explore technical possibilities, development velocity of the teams who are responsible for the development and discover possible problems and limitations. The system is quickly demonstrated to the users who give feedback. This is reincorporated and presented again. In the end the prototype can either be discarded or reused to be developed into the later full blown system. 
+
+**End User Development**: End users are trained to be able to part take or completely develop the system by themselves. While the later option is rather unrealistic, the former makes sense, since a few of the users become part of the development team and lead the team towards the actual user requirements to ensure the appropriateness of the developments. 
+
+**Agile Development**: Small Teams, rapid feedback, iterative, always adding more functionality, finding requirements "on the fly"
+
+
 #### 14. Compare and contrast the three major ERP implementation categories.
 
+* **Comprehensive**: Adapt system processes heavily to fit actual processes present in the company. Causes high implementation costs. "*Make the system fit the company*"
+
+* **Middle-of-the-road**: Change some pre-defined processes to fit the ones which the organisations believes gives them a competitive advantage. Adopt other best-practices, which seem more rational to adopt rather than reimplement. *Most common middle-ground*
+
+* **Vanilla**: Completely change the business structure to fit all the best practices provided by the ERP system. *This can cause the organization to become a default type business with little room for being above average. However this leads to a structure that can easily be merged into larger companies making the organization attractive for M&As.*
+
 #### 15. What is ERP implementation methodology? Give examples. 
+
+The differentiation is made again between **traditional** (similar to waterfall) and **rapid** (similar to agile) life cycles. Traditional life cycles require step-by-step sequential development, involving milestones and formal reviews. The rapid life-cycle empowers teams and employees to make decisions themselves to keep progress velocity up. 
 
 #### 16. List the major tasks in the scope and commitment phase of the ERP life cycle.
 
@@ -628,6 +670,36 @@ Constantly communicate how important the project is, ensure sufficient funds and
 
 Scope creep is a common situation of changing goals which aren't properly documented. To counter scope creep, a proper process should be set up to correctly evaluate, document and communicate changes in scope. 
 
+
+
+----
+
+## Supply Chain Management (SCM)
+
+### Readings / Papers
+* Chopra and Meindl (2007), Chapters 1 & 2
+* Motiwalla and Thompson (2012), Chapter 11
+
+### Questions
+
+#### 1. What are the motivations for an organization to have a good supply chain management (SCM) system?
+
+* Satisfy customer demands while providing the highest possible profit. 
+
+#### 2. Define SCM in your own words.
+
+*A system that ignores organization boundries to coordinatinate production of products and services. However working together with suppliers is not always easy to implement.*
+
+#### 3. List the drivers of SCM and how they impact the system’s responsiveness.
+
+#### 4. What are the major types of SCM software?
+
+#### 5. Briefly describe the SCM processes.
+
+#### 6. Why is SCM implementation critical for the success of e-business?
+
+#### 7. What are the major components of e-SCM?
+
 ----
 
 ## Questions for Prof. Rosenkranz
@@ -636,4 +708,6 @@ Scope creep is a common situation of changing goals which aren't properly docume
 2. Why is it called _postproduction support_? That suggests support AFTER the product was used in production which is after 10 or so years? see [Wiki](https://en.wikipedia.org/wiki/Production_support)
 3. Why is the question 38 Chapter 5 saying "the 5 areas" when ths slides specify 6? Also this suggests hard-coded memorizing rather than learning by understanding...
 4. Chapter 5, 101: Why do ERP systems not require hardware? Why is integration, adaptation and customization (that goes beyond tweaking some parameters) not included in the "Implementation" phase?
+5. Chapter 2, Q 1: What are models in systems development compared to other disciplines?.. Why should academics in the field of systems development redefine the *model* term?
+6. Chapter 1 Q10 & 11. What is the role of ERP, SCM and CRM in systems integration? *Well what is the role? I can see ERP being required as a platform and common data model. But what about CRM? Does it have a role in sys integration?*
 

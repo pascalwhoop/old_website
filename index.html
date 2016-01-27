@@ -1,41 +1,46 @@
 ---
 layout: default
 ---
-<div class="postlist mdl-grid">
+<div class="mdl-cell mdl-cell--9-col">
+    <div class="postlist mdl-grid">
 
-    <!--static "header"-->
-    <div class="mdl-card mdl-shadow--10dp mdl-cell mdl-cell--8-col">
-        <div class="mdl-card__title mdl-color-text--grey-600">
-            <h2>{{site.title}}</h2>
+        <!--static "header"-->
+        <div class="mdl-card mdl-shadow--10dp mdl-cell mdl-cell--8-col">
+            <div class="mdl-card__title mdl-color-text--grey-600">
+                <h2>{{site.title}}</h2>
+            </div>
+            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                {{site.description}}
+            </div>
         </div>
-        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-            {{site.description}}
+
+
+        <div class="about-me-card mdl-card mdl-shadow--10dp mdl-cell mdl-cell--4-col">
+            <div class="mdl-card__title mdl-card--expand">
+            </div>
+            <div class="mdl-card__actions">
+                <a href="/about"
+                   class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--accent">
+                    Read more
+                </a>
+                <div class="mdl-layout-spacer"></div>
+                <a href="https://twitter.com/PascalBrokmeier" target="_blank"
+                   class="mdl-button mdl-js-button mdl-button--icon mdl-color-text--accent">
+                    <i class="fa fa-twitter "></i>
+                </a>
+                <a href="https://github.com/pascalwhoop/" target="_blank"
+                   class="mdl-button mdl-js-button mdl-button--icon mdl-color-text--accent">
+                    <i class="fa fa-github"></i>
+                </a>
+
+
+            </div>
         </div>
+
+
+        <!--actual dynamic posts -->
+        {% for post in site.posts %}
+        {% include post_preview_card.html%}
+        {% endfor %}
     </div>
-
-
-    <div class="about-me-card mdl-card mdl-shadow--10dp mdl-cell mdl-cell--4-col">
-        <div class="mdl-card__title mdl-card--expand">
-        </div>
-        <div class="mdl-card__actions">
-            <a href="/about" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--accent">
-                Read more
-            </a>
-            <div class="mdl-layout-spacer"></div>
-            <a href="https://twitter.com/PascalBrokmeier" target="_blank" class="mdl-button mdl-js-button mdl-button--icon mdl-color-text--accent">
-                <i class="fa fa-twitter "></i>
-            </a>
-            <a href="https://github.com/pascalwhoop/" target="_blank" class="mdl-button mdl-js-button mdl-button--icon mdl-color-text--accent">
-                <i class="fa fa-github"></i>
-            </a>
-
-
-        </div>
-    </div>
-
-
-    <!--actual dynamic posts -->
-    {% for post in site.posts %}
-    {% include post_preview_card.html%}
-    {% endfor %}
 </div>
