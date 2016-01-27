@@ -534,9 +534,33 @@ The differentiation is made again between **traditional** (similar to waterfall)
 
 #### 16. List the major tasks in the scope and commitment phase of the ERP life cycle.
 
+* Gap Analysis: Whats missing and needs to be implemented?
+* Physical Scope: What sites (locations of company) will be addressed? How many users?
+* BPM Scope: Will processes be changed? Who's affected?
+* Technical Scope: How much modification will be done to the ERP system?
+* Resource Scope: How high are the costs for redevelopment and the overall project?
+* Implementation Scope: The How of the technical scope. 
+
 #### 17. List the major tasks in the analysis and design phase of the ERP life cycle.
 
+* Decide on experts & consultants
+* analyse detailed user requirements
+* map differences current-planned (detailed for each process)
+* Design a change management plan
+* Data & system conversion
+* Training
+
+*I am unsure about the training and the data/system conversion. While the former sounds like something done parallel to the implementation phase (preparing the users), the latter actually belongs to the implementation phase.*
+
+
 #### 18. List the major tasks in the acquisition and development phase of the ERP life cycle.
+
+Install and release systems. Conversion can be done by one of the four phases:
+
+* Phased
+* Pilot
+* Parallel
+* Big Bang
 
 #### 19. What is the role of change management in the ERP life cycle?
 
@@ -547,6 +571,14 @@ Communicate all important information to involved people. Inform users about rea
 **What the slides claim:** the ERPLC is considered equivalent to the more abstract situation of buy before make. So the four dimensions *goals, analysis, design and implementation* are aligned with purchasing and modifying software products. 
 
 #### 21. What are the components of an ERP system?
+
+* Database server(s)
+* Application server(s)
+* Web server(s)
+* Firewalls
+* Clients
+
+All critical components must be failsafe and therefore redundant.
 
 #### 22. Why would a company choose to implement an ERP?
 
@@ -561,6 +593,10 @@ Communicate all important information to involved people. Inform users about rea
 *Without any customisation, a system might be quickly implemented and the project risk is much lower, however, either the entire business has to adapt to the systems default process structures or a mismatch between the actual processes and the implemented ones will exist. Also without customisation, a company might loose its competitive edge over other companies.* 
 
 #### 25. Why are there differences between a transactional and reporting database?
+
+A reporting database is not required to supply 100% accurate transaction safety. It can therefore be designed to be most efficient in serving reads with complex queries and interdependencies between data segments. A transactional DB on the other hand must ensure transaction safety, data consistency and each transaction must be checked against possible meta rules. 
+
+It could therefore be rational to perform a batch copy of the transactional DB once a day (only the 𝝙) and restructure this data in a way so that is can be queried in an efficient manner. 
 
 #### 26. What are the steps in purchasing an ERP?
 
