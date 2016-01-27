@@ -709,7 +709,7 @@ Scope creep is a common situation of changing goals which aren't properly docume
 
 
 ----
-
+<!--
 ## Supply Chain Management (SCM)
 
 ### Readings / Papers
@@ -735,6 +735,8 @@ Scope creep is a common situation of changing goals which aren't properly docume
 #### 6. Why is SCM implementation critical for the success of e-business?
 
 #### 7. What are the major components of e-SCM?
+
+-->
 
 ----
 
