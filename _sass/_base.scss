@@ -86,12 +86,18 @@ blockquote{
 }
 
 .blog {
-  .content-container, .post .mdl-card{
-    /*max-width: 900px;
+  .content-container, .post.mdl-grid{
+    /*max-width: 900px;*/
     padding: 0;
     width: 100%;
     margin: 0 auto;
-    flex-shrink: 0;*/
+    /*flex-shrink: 0;*/
+
+    .mdl-cell--12-col{
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
   /*.postlist .mdl-card{
     padding: 0;
