@@ -233,25 +233,6 @@ blockquote{
       text-decoration: none;
       font-weight: inherit;
     }
-    h3 {
-      margin: 0;
-      a {
-        text-decoration: none;
-      }
-      &.quote {
-        &:before, &:after {
-          display: block;
-          font-size: 3em;
-          margin-top: 0.5em;
-        }
-        &:before {
-          content: '“';
-        }
-        &:after {
-          content: '”';
-        }
-      }
-    }
   }
 }
 

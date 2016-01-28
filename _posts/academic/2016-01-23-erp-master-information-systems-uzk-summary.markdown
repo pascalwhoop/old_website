@@ -706,9 +706,107 @@ Constantly communicate how important the project is, ensure sufficient funds and
 
 Scope creep is a common situation of changing goals which aren't properly documented. To counter scope creep, a proper process should be set up to correctly evaluate, document and communicate changes in scope. 
 
+----
+## Customer Relationship Management Systems
 
+*This chapter had no questions, so a classical summary will be created. However since we also want to create Anki flashcards out of this, I will still create questions/flashcard templates using the h4 and h5 level headings.*
+
+### Readings / Papers
+
+Motiwalla and Thompson (2012), Chapter 12
+
+### Customer Relationship Management
+
+#### What is CRM?
+
+A system that incorporates **corporate strategy**, business methodology and technology to achieve a myriad of goals in a customer-driven environment. Ultimately the systems abstract goal is to increase profits and customer satisfaction. It does this through helping to understand customers better (**backend analysis** as well as **front-end customer facing support** like managing channels, interaction frequency, tracking issues, coordinating communication, ...).
+
+#### Give a brief history of CRM
+
+CRM started as a tool to automatically manage customer interaction processes. The markets environment changed and so did marketing go from mass marketing in the beginning to segmented marketing to individualized marketing. Now both large and small businesses must deliver **high quality products** that also offer **unique individualized experiences**.
+
+### Customer Relationship Management Systems 
+
+#### Name the different types of CRM
+
+* Data Warehouse (Analytical CRM)
+* Customer Loyalty Management (Operational CRM)
+* Communicative CRM (Multi Channel Mgmt)
+* Collaborative CRM (Multi Point Mgmt) [Different departments -- Customer]
+
+#### What's the difference between CRM and CRM systems?
+
+CRM is a process of continously improving interactions with the customer and finding opportunities to improve sales. The CRM systems are a cross-functional set of applications that work together to technically enable these goals. 
+
+#### What do CRM analysis processes do?
+
+To ensure optimal allocation of ressources, a company should focus its efforts on the customers who are most likely to generate revenue in the future. To enable this
+
+* **Understand the customer** and his patterns, wishes and needs to decide on the **probability** that he is **likely to purchase a product or service**.
+* sort the customers based on some form of (multidimensional) ranking and focus efforts on the *best* ones
+
+Also analyze feedback from customers to incorporate this into future products or individualize the customers experience to better fit the desired state.
+
+#### What are a few technologies used in CRM? (maybe buzzword bingo)
+
+* Data Mining
+* Business Intelligence
+* Big Data
+
+#### What is SFA?
+
+*Sales Force Automation*
+
+Functionality for sales personnel to automate sales lead distribution and tracking
+
+#### On-Demand CRM
+
+* Hosted CRM systems that are accesible via the browser and offer pay-as-much-as-you-use pricing models
+* Especially attractive for small businesses who require sophisticated CRM but whose primary field isn't IT.
+
+#### Describe the CRM Life-Cycle
+
+The life-cycle goes beyond technology and also focuses on people, business and business philosophy. 
+
+#### What are the three core customer focused data blocks of CRM?
+
+* Sales
+* Service
+* Marketing
+* [maybe also complaints but they can go into service]
+
+### Benefits, Drawbacks, and Trends
+
+#### Who is the most valuable customer?
+
+
+3 Dimensions are used to predict future probability to cause revenue:
+
+* Recentness (of last purchase)
+* Frequency (of purchases)
+* Monetary value (of each purchase)
+
+*Also there are special factors that can influence the value of a customer like current location, age, employment state, ... . It's of no value to a German service provider to spend a lot of money on individual marketing for a person that just moved abroad.*
+
+#### What is the (hypothetical) business value of CRM?
+
+Clear knowledge about customers which leads to: More cost-effective marketing, higher retention rates.
+
+#### Drawbacks and risks of CRM?
+
+There is no *guaranteed succuess of effectiveness* of CRM. It's really hard to determine causality (*although corellation should be existing*)
+
+<del>Difficult and expensive to implement.</del>
+*Not really applicable anymore with SaaS providers*
+
+#### What are a few examples of modern analytical CRM?
+
+* **Taste profiling**: Tracking purchases (and *looks*) to remember your taste
+
+* **Persuasion profiling**: Trying to understand what will persuade you to buy something by Trial & Error. A continously changing model of a customer can be built to improve what products will be displayed.
 
 ----
+
 <!--
 ## Supply Chain Management (SCM)
 
@@ -748,4 +846,5 @@ Scope creep is a common situation of changing goals which aren't properly docume
 4. Chapter 5, 101: Why do ERP systems not require hardware? Why is integration, adaptation and customization (that goes beyond tweaking some parameters) not included in the "Implementation" phase?
 5. Chapter 2, Q 1: What are models in systems development compared to other disciplines?.. Why should academics in the field of systems development redefine the *model* term?
 6. Chapter 1 Q10 & 11. What is the role of ERP, SCM and CRM in systems integration? *Well what is the role? I can see ERP being required as a platform and common data model. But what about CRM? Does it have a role in sys integration?*
+7. Chapter 6 Slide 21: A lead is potential customer isn't it? So it would be lead → actual customer
 
