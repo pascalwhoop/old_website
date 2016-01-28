@@ -24,7 +24,7 @@ layout: default
                 <div class="mdl-layout-spacer"></div>
 
                 {% if page.hascsvdownload %}
-                <button onclick="downloadCsv()"
+                <button onclick="caloo.downloadCsv.call(caloo)"
                         class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
                     Download Anki cards as CSV
                 </button>
