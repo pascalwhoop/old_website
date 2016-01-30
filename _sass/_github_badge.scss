@@ -4,9 +4,16 @@
 */
 @media screen and (max-width: 600px) {
 
-  .github-fork-ribbon-wrapper{
-    display: none; }
+  .github-fork-ribbon-wrapper {
+    display: none;
+  }
 
+}
+
+@media screen and (min-width: 600px) {
+  .github-heading-padding {
+    padding-right: 135px !important;
+  }
 }
 
 /* Left will inherit from right (so we don't need to duplicate code) */
@@ -65,8 +72,8 @@
 }
 
 .github-fork-ribbon-wrapper {
-  width: 170px;
-  height: 170px;
+  width: 155px;
+  height: 155px;
   position: absolute;
   overflow: hidden;
   top: 0;
@@ -121,7 +128,6 @@
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-
 
 .github-fork-ribbon-wrapper.left-bottom .github-fork-ribbon {
   top: 80px;

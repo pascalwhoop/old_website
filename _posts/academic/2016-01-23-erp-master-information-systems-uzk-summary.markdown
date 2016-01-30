@@ -6,14 +6,12 @@ categories: academic
 tags: erp university bpm erp iis
 banner:
 bannersize:
-hasmath: "true"
-hascsvdownload: "true"
+hasmath: true
+hascsvdownload: true
+github: true
 author: Pascal Brokmeier
 summary: A summary of the slides for the course ERP during the M.Sc. Information Systems winter semester 2015/16 at the University of Cologne
 ---
-
-# ERP Summary
-
 
 This summary will be written along the lines of the review questions of each slide deck. I will try and answer all questions of the slide decks and by this, summarise each chapter. To differentiate between my already present knowledge and the knowledge I yet have to build up, I'll always try and answer a question by myself first and then research in the slides. My own answers will be written in *italic text*.
 

@@ -1,3 +1,6 @@
+//showing loader in the beginning. We dont show it on default for non js clients
+document.getElementById("loader").style.display = "block;";
+
 
 (function(){
     // FIX scroll bug
@@ -6,14 +9,9 @@
         this.blocked = false;
 
 
-        this.switchLoadingDisplay = function() {
+        this.hideLoadingIcon = function() {
             // loader page
-            var page = document.getElementById("page");
-            var loader = document.getElementById("loader");
-            loader.style.display = "none";
-            document.getElementsByClassName("mdl-layout__content")[0].style.width = "100%";
-            page.style.display = "block";
-
+            var loader = document.getElementById("loader").style.display = "none";
         };
 
         this.buildToC = function() {
@@ -48,7 +46,7 @@
         };
 
         this.initiate = function(){
-            this.switchLoadingDisplay();
+            this.hideLoadingIcon();
             this.resetScrollState();
             this.buildToC();
         };

@@ -22,31 +22,15 @@
 
     <!-- our own code -->
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    <script src="/js/custom.js"></script>
+
 
     <!-- include a bunch of stuff like styles, javascript externals etc-->
     <script type="text/javascript" src="/js/jquery-2.2.0.min.js"></script>
     <link rel="stylesheet" href="/css/mdl/material.deep_orange-light_blue.min.css">
-    <script src="/css/mdl/material.min.js"></script>
     <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <!-- mathJax-->
-    {% if page.hasmath == "true" %}
-    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    {% endif %}
-
-    {% if page.is_post == "true" %}
-    <script type="text/javascript" src="/js/toc.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-        <!-- Genius annotation -->
-        <!--<script async src="//genius.codes"></script>-->
-        <!--<script async defer src="https://hypothes.is/embed.js"></script>-->
-    {% endif %}
-    {% if page.hascsvdownload %}
-    <script src="/js/fileSaver.min.js"></script>
-    {% endif %}
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />

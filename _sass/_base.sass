@@ -1,0 +1,144 @@
+body
+  font-family: 'Roboto', 'Helvetica', sans-serif !important
+  font-size: $base-font-size
+  line-height: $base-line-height
+  color: $text-color
+  /*Background Styles
+  &::before
+    background-size: cover
+    background-attachment: fixed
+    content: ''
+    will-change: transform
+    z-index: -1
+    left: 0
+    right: 0
+    bottom: 0
+    top: 0
+    position: fixed
+
+a
+  text-decoration: none
+
+/*fix for safari, it dont support min-resolution
+@media (max-width: 512px)
+  body::before
+    background-image: url("/images/bg_1024.jpg")
+
+@media (min-width: 512px)
+  body::before
+    background-image: url("/images/bg_2048.jpg")
+
+@media (max-width: 512px) and (min-resolution: 1.5dppx), (max-width: 1024px) and (max-resolution: 1.5dppx)
+  body::before
+    background-image: url("/images/bg_1024.jpg")
+
+@media (min-width: 513px) and (max-width: 1024px) and (min-resolution: 1.5dppx), (min-width: 1025px) and (max-width: 2048px) and (max-resolution: 1.5dppx)
+  body::before
+    background-image: url("/images/bg_2048.jpg")
+
+@media (min-width: 1025px) and (min-resolution: 1.5dppx), (min-width: 2049px) and (max-resolution: 1.5dppx)
+  body::before
+    background-image: url("/images/bg_2880.jpg")
+
+@media (max-width: 1025px)
+  .mdl-layout__drawer-button
+    background: url("/images/bg_1024.jpg")
+    i
+      color: white
+
+.left
+  float: left
+
+.right
+  float: right
+
+footer
+  i
+    color: $theme-font-color
+
+blockquote.style2
+  font: 14px/22px normal helvetica, sans-serif
+
+blockquote
+  margin-top: 10px
+  margin-bottom: 10px
+  margin-left: 50px
+  padding-left: 15px
+  border-left: 3px solid #ccc
+  font-style: italic
+  p
+    margin: 0
+  &:before, &:after
+    display: none
+
+.blog
+  .content-container, .post.mdl-grid
+    padding: 0
+    width: 100%
+    margin: 0 auto
+  &.mdl-layout .mdl-layout__content
+    padding-top: 230px
+    position: relative
+    -webkit-overflow-scrolling: touch
+  .mdl-card
+    margin: 20px 8px
+    .banner
+      min-height: 370px
+    .banner-lrg
+      min-height: 500px
+    .mdl-card__supporting-text
+      padding: 10px
+
+.comments
+  background-color: #EEE
+
+.demo-back
+  color: white
+
+/* Workaround for Firefox.
+ * User agent stylesheet kept overwriting the font in FF only.
+
+.blog
+  .section-spacer
+    flex-grow: 1
+
+/* Fixes for IE 10
+
+.mdl-grid
+  display: flex !important
+
+.social-btn
+  background-position: center
+  background-size: contain
+  background-repeat: no-repeat
+  background-color: transparent
+  margin: 0 16px
+  width: 24px
+  height: 24px
+  cursor: pointer
+  opacity: 0.46
+  border-radius: 2px
+
+.social-btn__twitter
+  background-image: url("https://www.gstatic.com/../images/icons/material/system/2x/post_twitter_black_24dp.png")
+
+.social-btn__blogger
+  background-image: url("https://www.gstatic.com/../images/icons/material/system/2x/post_facebook_black_24dp.png")
+
+.social-btn__gplus
+  background-image: url("https://www.gstatic.com/../images/icons/material/system/2x/post_gplus_black_24dp.png")
+
+.social-btn__share
+  color: rgba(0, 0, 0, 0.54)
+  background: transparent
+
+.blog .mdl-mini-footer
+  margin-top: 80px
+  height: 120px
+  padding: 40px
+  align-items: center
+  background-color: white
+  box-sizing: border-box
+
+.fixed
+  position: fixed
