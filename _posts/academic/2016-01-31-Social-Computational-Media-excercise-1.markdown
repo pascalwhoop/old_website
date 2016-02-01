@@ -110,10 +110,10 @@ To dominate the market, the diffusion across the bridge must occur. For this to 
 
 \`a=16\`
 
-### Question 4
+<!--### Question 4
 ![](/images/2016-01-31-Social-Computational-Media-excercise-1/2.png){: height="250px"}
 
 **a)**
-
+-->
 
 
