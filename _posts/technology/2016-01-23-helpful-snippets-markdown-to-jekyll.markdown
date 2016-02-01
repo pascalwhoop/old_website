@@ -36,34 +36,41 @@ to get
 I know write all my summaries directly in my blog repository and live-view it on the website instead of Marked 2. This works because I now scroll automatically to my last position on a reload. With MDL this didn't work, because there was a [bug (also on Github)](https://github.com/google/material-design-lite/issues/1120). But Thanks to this snippet:
 
 {% highlight javascript %}
-// FIX scroll bug
+// FIX scroll bug (live-serve usually scrolls back but MDL has its own layout stuff which makes things complicated)
+//...
+this.blocked = false;
 
-var blocked = false;
+this.resetScrollState = function(){
+            var mainScrollArea = document.getElementsByClassName('mdl-layout__content')[0];
+            setTimeout(function () {
+                if (window.location.href == localStorage.getItem('lastUrl')) {
+                    mainScrollArea.scrollTop = localStorage.getItem('scrollTop');
+                } else {
+                    localStorage.setItem('lastUrl', window.location.href);
+                    localStorage.setItem('scrollTop', 0);
+                }
+            }, 100);
 
-var fixScroll = function(){
-      var mainScrollArea = document.getElementsByClassName('mdl-layout__content')[0];
-      if(window.location.href == localStorage.getItem('lastUrl')) {
-                  mainScrollArea.scrollTop = localStorage.getItem('scrollTop');
-            } else {
-                  localStorage.setItem('lastUrl', window.location.href);
-                  localStorage.setItem('scrollTop', 0);
-            }
 
-      mainScrollArea.addEventListener('scroll', function() {
-            if(!blocked){
-                  localStorage.setItem('scrollTop', this.scrollTop);
-                  blocked = true;
-                  setTimeout(function(){blocked = false;}, 200);    
-            } 
-      });
-}
+            mainScrollArea.addEventListener('scroll', function () {
+                if (!that.blocked) {
+                    localStorage.setItem('scrollTop', this.scrollTop);
+                    that.blocked = true;
+                    setTimeout(function () {
+                        that.blocked = false;
+                    }, 200);
+                }
+            });
+        };
 
-window.onload = fixScroll;
+window.onload = resetScrollState;
 {% endhighlight %}
 
 it doesn't happen anymore and I can always keep going where I left off when i press ⌘ + s
 
-**make all questions headlines:**
+### Regex for copy / replacing in markdown documents
+
+#### make all questions headlines
 
 {% highlight javascript %}
 //selector for sublime regex filter
@@ -81,10 +88,15 @@ it doesn't happen anymore and I can always keep going where I left off when i pr
 {% endhighlight %}
 
 
+<del>
 **parse markdown and make it usable for Ankidroid**
+</del>
 
+This is not applicable anymore. Instead I use Javascript to parse the DOM and generate a CSV. Details in the custom.js file in this repository
+
+<del>
 assuming we have markdown written with headline level 4 or 5 as questions and answers afterwards, this regex can select and group our texts so we can convert it to a csv:
-
+</del>
 {% highlight bash %}
 #{4,5}(.*)([^#]*)
 {% endhighlight %}

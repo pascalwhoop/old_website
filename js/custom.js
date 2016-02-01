@@ -52,7 +52,7 @@ document.getElementById("loader").style.display = "block;";
         };
 
         this.resetScrollState = function(){
-            var mainScrollArea = document.getElementsByClassName('mdl-layout')[0];
+            var mainScrollArea = document.getElementsByClassName('mdl-layout__content')[0];
             setTimeout(function () {
                 if (window.location.href == localStorage.getItem('lastUrl')) {
                     mainScrollArea.scrollTop = localStorage.getItem('scrollTop');
