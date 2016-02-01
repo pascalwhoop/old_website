@@ -1,3 +1,15 @@
+---
+layout: post
+title:  "MSc. Information Systems @UzK: Discussion Summary"
+date:   2016-02-01
+categories: academic
+tags: erp university bpm erp iis discussion
+hasmath: "true"
+hascsvdownload: "true"
+author: Maximilian Stiehler
+summary: A summary of the discussion questions for the course ERP during the M.Sc. Information Systems winter semester 2015/16 at the University of Cologne
+---
+
 ## Discussion results of ERP Presentations
 
 ### Themifstocleous & Irani (2002): Novel taxonomy for application integration
