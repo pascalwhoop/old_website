@@ -690,7 +690,7 @@ A project manager needs to have sufficient technical skills to lead his/her team
 
 > *These 5 points are taken from the slides with comments by me. These should be taken with a grain of salt since I'm a bit of a realist*
 
-* **Decision Making Process**: Slides call for a predefined process. It can however be discussed that a rigid process is better than intuitive working but well proven leaders.
+* **Decision Making Process**: Slides call for a predefined process. It can however be discussed that a rigid process is worse than intuitive working but well proven leaders.
 * **Project Scope**: A fixed scope describing the goal of the project to ensure the overall work doesn't constantly have to change direction. While small teams may work agile, discovering ultimate requirements as they go, the overall project goal should be obvious and clearly defined from the beginning. 
 * **Teamwork**: Focus especially on working with externals. Soft-Skills...
 * **Change Management**: Do a little propaganda for the project, making everybody be on-board with it to ensure everybody works helps out instead of working against the goal. 
