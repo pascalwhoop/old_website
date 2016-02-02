@@ -237,7 +237,7 @@ Over time, the reasons for competitive advantage have changed. Before the 60s, e
 Business Processes are positioned on multiple layers of an organization. However the executable processes (mostly modelled using BPMN) are commonly found in the operational layer, not the organizational layer. Here, value chain diagrams only describe the abstract concepts due to lack of instrumentalisation. 
 
 
-![](/images/2016-01-23-erp-master-information-systems-uzk-summary/4.png){:height="400px" .center}
+![](/images/2016-01-23-erp-master-information-systems-uzk-summary/4.png){:.img-400 .center}
 
 #### Dumas (2013) 6 steps of BPM engagement
 
@@ -678,7 +678,7 @@ A **project manager** has a single team to manage and is responsible for a speci
 
 A **program manager** coordinates multiple projects to ensure achievement of the business goals. The program manager could possibly be a synonym for the **project executive**
 
-![](/images/2016-01-23-erp-master-information-systems-uzk-summary/6.png){: .center height="400px"}
+![](/images/2016-01-23-erp-master-information-systems-uzk-summary/6.png){: .center .img-400}
 
 #### 40. What are the skills, knowledge, and abilities required to be a project manager?
 

@@ -4,13 +4,11 @@ title:  "MSc. Information Systems @UzK: Discussion Summary"
 date:   2016-02-01
 categories: academic
 tags: erp university bpm erp iis discussion
-hasmath: "true"
-hascsvdownload: "true"
+hasmath: true
+hascsvdownload: true
 author: Maximilian Stiehler
 summary: A summary of the discussion questions for the course ERP during the M.Sc. Information Systems winter semester 2015/16 at the University of Cologne
 ---
-
-## Discussion results of ERP Presentations
 
 ### Themifstocleous & Irani (2002): Novel taxonomy for application integration
 
@@ -58,17 +56,18 @@ summary: A summary of the discussion questions for the course ERP during the M.S
 
 *All question weren’t discussed due to time issues.*
 
-#### 1. Do you think it is realistic that companies offer their services based on their SOA infrastructure to other companies?
+<!--#### 1. Do you think it is realistic that companies offer their services based on their SOA infrastructure to other companies?
 
 #### 2. Do you think it is possible to achieve the same benefits as SOA by using technologies respecting modularization and standardization? 
 
 #### 3. Do you think the coding scheme was too strict, since most found chains were unique?
 
 #### 4. Do you think SOA will succeed in the future?
+-->
 
 ### Busquets (2015) Discovery paths - exploring emergence and IT evolutionary design in cross-border M&As
 
-#### *1. Is there a best practice approach to perform Fusions or even a standardized way to do so?*
+#### 1. Is there a best practice approach to perform Fusions or even a standardized way to do so?
 
 *translated and lightly revised* The text tells about standardized synergies which lead you to an efficient way to perform the fusion. Every fusion is different and differs due to several small factors. The firm in the text was prepared for the fusion, so the “try and error”-approach was not used. Rather than that ideas were defined and the best were critically discussed. The conclusion was that there is no standardized way of performing a fusion, because every fusion proceeds different. It is necessary to find an individual solution to every fusion.
 

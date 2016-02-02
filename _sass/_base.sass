@@ -3,7 +3,7 @@ body
   font-size: $base-font-size
   line-height: $base-line-height
   color: $text-color
-  /*Background Styles
+  /*Background Styles*/
   &::before
     background-size: cover
     background-attachment: fixed
@@ -19,7 +19,7 @@ body
 a
   text-decoration: none
 
-/*fix for safari, it dont support min-resolution
+/*fix for safari, it dont support min-resolution*/
 @media (max-width: 512px)
   body::before
     background-image: url("/images/bg_1024.jpg")
@@ -86,8 +86,6 @@ blockquote
       min-height: 370px
     .banner-lrg
       min-height: 500px
-    .mdl-card__supporting-text
-      padding: 10px
 
 .comments
   background-color: #EEE
