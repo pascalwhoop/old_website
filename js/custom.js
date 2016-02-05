@@ -52,10 +52,13 @@ document.getElementById("loader").style.display = "block;";
         };
 
         this.resetScrollState = function(){
-            var mainScrollArea = document.getElementsByClassName('mdl-layout__content')[0];
+            var mainScrollArea_a = document.getElementsByClassName('mdl-layout__content')[0];
+            var mainScrollArea_b = document.getElementById("page");
+
             setTimeout(function () {
                 if (window.location.href == localStorage.getItem('lastUrl')) {
-                    mainScrollArea.scrollTop = localStorage.getItem('scrollTop');
+                    mainScrollArea_a.scrollTop = localStorage.getItem('scrollTop');
+                    mainScrollArea_b.scrollTop = localStorage.getItem('scrollTop');
                 } else {
                     localStorage.setItem('lastUrl', window.location.href);
                     localStorage.setItem('scrollTop', 0);
@@ -63,7 +66,11 @@ document.getElementById("loader").style.display = "block;";
             }, 100);
 
 
-            mainScrollArea.addEventListener('scroll', function () {
+            mainScrollArea_a.addEventListener('scroll', that.scrollListener);
+            mainScrollArea_b.addEventListener('scroll', that.scrollListener);
+        };
+
+        this.scrollListener =  function () {
                 if (!that.blocked) {
                     localStorage.setItem('scrollTop', this.scrollTop);
                     that.blocked = true;
@@ -71,8 +78,8 @@ document.getElementById("loader").style.display = "block;";
                         that.blocked = false;
                     }, 200);
                 }
-            });
-        };
+
+            };
 
 
 //functions to download a Websites questions (heading level 4 and 5) as cards.
@@ -83,6 +90,7 @@ document.getElementById("loader").style.display = "block;";
                 var cards = [];
                 headings.each(function () {
                     var back= $(this).nextUntil("h5, h4, h3, h2, h1");
+                    that.makeImagesWork(back);
 
                     var card = {
                         frontside: $(this).text(),
@@ -97,9 +105,18 @@ document.getElementById("loader").style.display = "block;";
 
         };
 
-        this.getStringFromJQueryObjects = function (jQobjects){
+        this.makeImagesWork = function(back){            
+            back.find("img").each(function(){
+                var img = $(this)[0];
+                if(img.getAttribute("src").indexOf("/images") == 0){
+                    img.src = "http://pascalwhoop.github.io" + $(this).attr("src");    
+                }                
+            })
+        }
+
+        this.getStringFromJQueryObjects = function (jqObjects){
             var asText = "";
-            jQobjects.each(function(){
+            jqObjects.each(function(){
                 asText += $(this).prop('outerHTML');
             });
             return asText;

@@ -92,6 +92,12 @@ ERP systems primarily solve the data integration dimension and also serve as a p
 They serve to both streamline the production process towards an optimal process with minimal bufferings and short cycles as well as streamline the customer experience for customers coming into contact with the organization. CRM also analyse the customers behaviour to improves sales and create a better, holistic view of the customer for the firm. 
 
 
+**Update 2016/02/03:**
+
+* SCM and CRM focus on the inter-organizational integration.
+* ERP focuses on (internal) processes
+
+
 ---
 
 ## Business Process Modeling
@@ -805,7 +811,7 @@ There is no *guaranteed succuess of effectiveness* of CRM. It's really hard to d
 
 ----
 
-<!--
+
 ## Supply Chain Management (SCM)
 
 ### Readings / Papers
@@ -816,33 +822,140 @@ There is no *guaranteed succuess of effectiveness* of CRM. It's really hard to d
 
 #### 1. What are the motivations for an organization to have a good supply chain management (SCM) system?
 
-* Satisfy customer demands while providing the highest possible profit. 
+* In general: Satisfy customer demands while providing the highest possible profit. 
+* Idea: Optimising on a firm level is at most of equivalent effect as optimising on a supply-chain level. In other words an optimised supply-chain is always at least as good as all firm-level optimisations, however often even better. 
+
+A good SCM can improve reactiveness or efficiency (those two dimensions always demand a trade-off)
 
 #### 2. Define SCM in your own words.
 
-*A system that ignores organization boundries to coordinatinate production of products and services. However working together with suppliers is not always easy to implement.*
+*A system that ignores organization boundries to coordinatinate realisation of products and services to streamline all actions towards a cross-firm wide goal. This is enabled by sharing information, goals strategies and ultimately increased profits. However working together with suppliers is not always easy to implement.*
 
-#### 3. List the drivers of SCM and how they impact the system’s responsiveness.
+##### 2.1 Compare ERP and SCM
+
+| Point of Comparison | ERP | SCM |
+|:--------------------|:----|:----|
+| Comprehensiveness | Covers a wide range of functionality | Limited to specific supply chain functionality |
+| Complexity | Highly complex | Relatively less complex|
+| Sourcing tables | Relatively static | Relatively dynamic | 
+| Constraints handling | All the demand, capacity, and material constraints are considered in isolation of each other | Simultaneous handling of the constraints | 
+| Functionality | Relatively less dynamic because they are mainly concerned with transaction processing speed and capacity | Relatively more dynamic because it performs simulations of transaction adjustments with regard to the constraints in real time |
+
+#### 3. List the drivers of SCM and how they impact the system’s responsiveness
+
+a supply chain can be more or less responsive depending on the overall goal. If a beneficial approach is being very responsive to demand, efficiencies are substituted by more costly alternatives that allow higher responsiveness (like larger warehouses).
+
+* Inventory: High I → responsive
+* Transportation: Consolidated transports → unresponsive
+* Facilities: Many distributed facilities → responsive
+* Information: high informatin sharing → responsive
+* Sourcing: 
+* Pricing
+
+##### 3.1 What flows are usually found in a supply-chain?
+
+* Product flow
+* Information flow
+* finance flow
+
+##### 3.2 What is the bullwhip effect?
+
+Because customer demand is rarely perfectly stable, businesses must forecast demand to properly position inventory and other resources. Forecasts are based on statistics, and they are rarely perfectly accurate. Because forecast errors are given, companies often carry an inventory buffer called "safety stock".
+
+Moving up the supply chain from end-consumer to raw materials supplier, each supply chain participant has greater observed variation in demand and thus greater need for safety stock. [...] The effect is that variations are amplified as one moves upstream in the supply chain 
+
+![bullwhip effect visualised](https://upload.wikimedia.org/wikipedia/commons/e/ef/Bulwhip_efect.jpg){: .center .img-400}
+
+>Source: [Wikipedia](https://en.wikipedia.org/wiki/Bullwhip_effect)
+{:.img-caption}
 
 #### 4. What are the major types of SCM software?
 
+* **Planning**: Use advanced solving algorithms to find the best way to fill orders. This can be both strategic planning as well as operative planning for each new order. 
+* **Execution**: Track status of goods, processes, products and overall asset states. Enables adaption based on current state of chain and changed demands
+
 #### 5. Briefly describe the SCM processes.
+
+Supply chain processes can be described in two ways: The **cycle view** and the **push/pull view**.
+
+* **cycle view**: All processes are performed at each level of the chain with dedicated in-/output interfaces. In this view, each firm can take the role of a *customer* or a *supplier*.
+
+![](/images/2016-01-23-erp-master-information-systems-uzk-summary/7.png){:.img-350}
+>Source: Chopra and Meindl (2007)
+{:.img-caption}
+
+* **push/pull view**: A push based supply chain produces products in anticipatin of demand (usually based on forecasts or other assurances). A pull based supply chain doesn't actually produces anything until an actual order has been received. In the real world any combination of these two extremes are used.
+
+
+![](/images/2016-01-23-erp-master-information-systems-uzk-summary/8.png){:.img-350}
+>Source: Laudon and Laudon (2009)
+{:.img-caption}
+
 
 #### 6. Why is SCM implementation critical for the success of e-business?
 
+Because a SCM implementation allows a firm to hook into a chain of firms information "backbone" that share information and planning using web technologies. 
+
+
 #### 7. What are the major components of e-SCM?
 
--->
+* Replenishment Systems
+* E-Procurement
+* Collaborative Planning, Design & Development
+* E-Logistics
+* Supply Webs
 
-----
+<!--
 
 ## Questions for Prof. Rosenkranz
 
-1. Why is the Wonder Shed Inc example concluding I<sub>w</sub>/R = T<sub>w</sub> ? If 16,5 units/h are produced and a total of 80 are in the process (+ 5 in each stage?) then shouldn't 80/ 0,275 = T and ≠ T<sub>w</sub>?
-2. Why is it called _postproduction support_? That suggests support AFTER the product was used in production which is after 10 or so years? see [Wiki](https://en.wikipedia.org/wiki/Production_support)
-3. Why is the question 38 Chapter 5 saying "the 5 areas" when ths slides specify 6? Also this suggests hard-coded memorizing rather than learning by understanding...
-4. Chapter 5, 101: Why do ERP systems not require hardware? Why is integration, adaptation and customization (that goes beyond tweaking some parameters) not included in the "Implementation" phase?
-5. Chapter 2, Q 1: What are models in systems development compared to other disciplines?.. Why should academics in the field of systems development redefine the *model* term?
-6. Chapter 1 Q10 & 11. What is the role of ERP, SCM and CRM in systems integration? *Well what is the role? I can see ERP being required as a platform and common data model. But what about CRM? Does it have a role in sys integration?*
-7. Chapter 6 Slide 21: A lead is potential customer isn't it? So it would be lead → actual customer
+1. **Wonder Shed example → flow time calculation** 
+
+Why is the Wonder Shed Inc example concluding \`I_w/R=T_w\`?
+
+If \`(16.5\text{units})/\text{hour}\` are produced and a total of 80 are in the process then shouldn't \`80 / 16.5 * 60 = T\` and \`T_w = T - T_t\` ?
+
+Also those 80 are only the ones in the buffer. Assuming each stage has a load batch of 1 (nothing else is specified), there are a total of 85 units in the process. So the calculation above would be done with 85 instead of 80. 
+
+Now let's assume the process would only be made up of objects moving from buffer to buffer (leaving out the actual processing steps). Then \`T_w = T = 80/16.5 * 60 = 290\`. 
+
+But now since the process is not only made up of buffers but also activities, we cannot do that. 
+
+So what we know: 
+
+\`R = (16.5u)/h\`
+
+\`R = R_\text{bottleneck activity}\`
+
+
+2. **Why is it called _postproduction support_? That suggests support AFTER the product was used in production which is after 10 or so years? see [Wiki](https://en.wikipedia.org/wiki/Production_support)**
+
+
+
+3. **Chapter 5 Q 38  saying "the 5 areas" when ths slides specify 6? Also this suggests hard-coded memorizing rather than learning by understanding...**
+
+
+
+4. **Chapter 5, 101: Why do ERP systems not require hardware? Why is integration, adaptation and customization (that goes beyond tweaking some parameters) not included in the "Implementation" phase?**
+
+
+
+5. **Chapter 2, Q 1: What are models in systems development compared to other disciplines?.. Why should academics in the field of systems development redefine the *model* term?**
+
+
+Beschreibende Modelle, keine Prognosemodelle. Kann nicht wirklich falsch sein, können verschiedene Sichten / Perspektiven beschreiben. 
+
+Wissenscahft hat:
+
+1. Beschreibende, erklärende, vorhersagende (und kombinationen hieraus)
+TODO
+
+
+
+6. **Chapter 1 Q10 & 11. What is the role of ERP, SCM and CRM in systems integration? *Well what is the role? I can see ERP being required as a platform and common data model. But what about CRM? Does it have a role in sys integration?***
+
+
+
+7. **Chapter 6 Slide 21: A lead is potential customer isn't it? So it would be lead → actual customer**
+-->
 

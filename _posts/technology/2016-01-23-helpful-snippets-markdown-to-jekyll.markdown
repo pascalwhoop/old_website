@@ -70,9 +70,20 @@ it doesn't happen anymore and I can always keep going where I left off when i pr
 
 ### Regex for copy / replacing in markdown documents
 
+#### changing images sources
+
+{% highlight bash %}
+\(([0-9]*\.png)\)
+
+replace e.g. with 
+
+(\/images\/2016-02-02-social-computational-media-summary\/$1)
+
+{% endhighlight %}
+
 #### make all questions headlines
 
-{% highlight javascript %}
+{% highlight bash %}
 //selector for sublime regex filter
 \n([0-9]{1,2}\.)
 //replace
@@ -80,7 +91,7 @@ it doesn't happen anymore and I can always keep going where I left off when i pr
 {% endhighlight %}
 
 
-{% highlight javascript %}
+{% highlight bash %}
 //replace multimarkdown subscript with html subscript
 ~([a-z0-9]*)~
 //replace
@@ -100,3 +111,5 @@ assuming we have markdown written with headline level 4 or 5 as questions and an
 {% highlight bash %}
 #{4,5}(.*)([^#]*)
 {% endhighlight %}
+
+
