@@ -109,7 +109,7 @@ document.getElementById("loader").style.display = "block;";
             back.find("img").each(function(){
                 var img = $(this)[0];
                 if(img.getAttribute("src").indexOf("/images") == 0){
-                    img.src = document.location.hostname + $(this).attr("src");    
+                    img.src = "http://" + document.location.hostname + $(this).attr("src");    
                 }                
             })
         }
