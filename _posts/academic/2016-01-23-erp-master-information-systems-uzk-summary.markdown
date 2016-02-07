@@ -849,8 +849,8 @@ a supply chain can be more or less responsive depending on the overall goal. If 
 * Transportation: Consolidated transports → unresponsive
 * Facilities: Many distributed facilities → responsive
 * Information: high informatin sharing → responsive
-* Sourcing: 
-* Pricing
+* Sourcing: Source of inputs for products (in-house vs outsourcing)
+* Pricing: Decisions about price for products determines resources available
 
 ##### 3.1 What flows are usually found in a supply-chain?
 
@@ -881,6 +881,7 @@ Supply chain processes can be described in two ways: The **cycle view** and the 
 * **cycle view**: All processes are performed at each level of the chain with dedicated in-/output interfaces. In this view, each firm can take the role of a *customer* or a *supplier*.
 
 ![](/images/2016-01-23-erp-master-information-systems-uzk-summary/7.png){:.img-350}
+
 >Source: Chopra and Meindl (2007)
 {:.img-caption}
 
@@ -888,6 +889,7 @@ Supply chain processes can be described in two ways: The **cycle view** and the 
 
 
 ![](/images/2016-01-23-erp-master-information-systems-uzk-summary/8.png){:.img-350}
+
 >Source: Laudon and Laudon (2009)
 {:.img-caption}
 

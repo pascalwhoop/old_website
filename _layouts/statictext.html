@@ -1,9 +1,17 @@
 ---
 layout: default
 ---
-<div class="static-container">
-        {{ content }}
+<div class="mdl-cell mdl-cell--10-col mdl-cell--4-col-phone">
+    <!-- Post card-->
+    <div class="post mdl-grid">
+        <!-- arrow back button -->
+        {% include back.html %}
+
+        <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--4-col-phone">
+            <div class="mdl-card__supporting-text">              
+                <div>{{ content }}</div>
+            </div>            
+        </div>       
+    </div>
+
 </div>
-
-
-

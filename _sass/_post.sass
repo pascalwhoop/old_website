@@ -8,6 +8,11 @@
     .post
       .mdl-card
 
+@media (min-width: 840px)
+  .post
+    .mdl-card
+      padding: 40px
+
 
 .img-200
   max-height: 200px
@@ -20,13 +25,19 @@
 .img-500
   max-height: 500px
 .post
-  table
+  .table-normal
     margin: 10px
     border: 1px solid
     border-collapse: collapse
     th, td
       border: 1px solid
       padding: 4px
+  .table-xy
+    thead
+      background-color: $grey-color-light
+    tbody>tr>td:first-child
+      background-color: $grey-color-light
+      font-weight: bold
 
 .mdl-card__supporting-text
   figure

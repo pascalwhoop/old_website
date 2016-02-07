@@ -3,7 +3,7 @@
 
         {% if post.banner %}
         <div class="mdl-card__media banner {%if post.bannersize == 'large' %} banner-lrg {% endif %}"
-             style="background: url('/images/{{ post.banner }}') center">
+             style="background: url('/images/{{ post.banner }}') center; background-size: cover">
         </div>
         {% endif %}
         <div class="mdl-card__title mdl-card--expand">
