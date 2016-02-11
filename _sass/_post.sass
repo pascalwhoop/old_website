@@ -25,19 +25,19 @@
 .img-500
   max-height: 500px
 .post
-  .table-normal
+  table
     margin: 10px
     border: 1px solid
     border-collapse: collapse
     th, td
       border: 1px solid
       padding: 4px
-  .table-xy
-    thead
+    thead   
       background-color: $grey-color-light
-    tbody>tr>td:first-child
-      background-color: $grey-color-light
-      font-weight: bold
+    &.table-xy
+      tbody>tr>td:first-child
+        background-color: $grey-color-light
+        font-weight: bold
 
 .mdl-card__supporting-text
   figure
