@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "IT-Sourcing and Cloud Computing - Digital Transformation Chapter 5 @ UzK"
+title:  "IT-Sourcing and Cloud Computing - Digital Transformation Chapter 6 @ UzK"
 date: 2016-02-12
 categories: academic
 tags: ["digital transformation",  "university", "iot", "industrie 4.0", "digitalisation"]
@@ -171,7 +171,7 @@ IT is a strategic *enabler*, serving as innvation and inspiration hotspot for bu
 
 * Freed IT personnel resources can be used for strategic tasks (e.g. Business-Alignment)
 
-![](/images/2016-02-10-digital-transformation-chapter-5-summary/1.png){:.img-350}
+![](/images/2016-02-10-digital-transformation-chapter-6-summary/1.png){:.img-350}
 
 >Complementarity between IT Outsourcing and Internal IT Investments
 {:.img-caption}
