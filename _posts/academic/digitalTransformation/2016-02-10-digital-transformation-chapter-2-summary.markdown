@@ -169,7 +169,44 @@ Applying the IT opportunities to the five forces model, each of the forces can b
 
 #### Barriers to imitation
 
-Piccoli, Feeny & Ives argue, that while IT can usually be replicated, the cost to doing so is sometimes way out of proportion. IT can be very complex, replication costly and not economical. IT can therefore serve as a barrier for protect the competitive advantage of a firm. These **barriers cause response lag** and/or **high costs**. 
+Piccoli, Feeny & Ives argue, that while IT can usually be replicated, the cost to doing so is sometimes way out of proportion. IT can be very complex, replication costly and not economical. IT can therefore serve as a barrier for protect the competitive advantage of a firm. These **barriers cause response lag** and/or **high costs**. Logically, the firms don't try to immitate the IT, but the **successful strategic initiative with IT at its underyling core**
+
+1. IT Project Barrier
+2. IT Resources and Capabilities Barrier
+3. Complementary Resource Barrier
+
+
+
+
+##### 1 IT Project Barrier: 
+
+**The barrier created by the project for aquiring said IT capability itself. This includes:** 
+
+1. IT complexity: Some IT is complex to implement and develop
+2. IT uniqueness: Some IT is unique or not readily available on the market and difficult to aquire or reconstruct
+3. Implementation process complexity: Although all parts might be available, the combination to form a useful system might be difficult and time-consuming
+4. Process Change: Not only the technology needs to change, the processes in the business also need changes and these can cause significant response lag
+
+##### 2 IT Resources and Capabilities Barrier: 
+
+**With rising complexity of IT-enabled strategic initiatives, the underlying systems become more complex and therefore more difficult to immitate.**
+
+1. IT resources: Better IT hardware resources allow quicker development of initiatives IT cores and therefore give organizations a time advantage
+2. IT Infrastructure: a combination of the resources as well as personell ans specialists supporting the strategy initiative  
+3. Information repositories: Having the IT often doesn't help anything, without the core information causing the product to be unique and valuable too. As an example, a social network with no content can be state-of-the-art design and technology but, without users and content, is ultimately worthless.
+4. Capabilities, Skills and Management: The human skillset aquired by the leading firm which takes time to build or copy and introduces lag.
+
+##### 3 Complementary Resource Barrier
+
+Based on the RBV, IT can help leverage organizational ressources, or be an organizational ressource to be leveraged to enable an IT-enabled strategic initiatve. Examples include:
+
+* Tangible Resources
+* Intangible Resources
+* Business Processes
+
+##### 4 Preemption Barrier
+
+This Barrier is all about switching costs. They can arise from exclusive contracting, advanced services, co-investments by the customers and many others.
 
 #### Information orientation
 

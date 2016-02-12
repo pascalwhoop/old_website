@@ -85,7 +85,7 @@ document.getElementById("loader").style.display = "block;";
 //functions to download a Websites questions (heading level 4 and 5) as cards.
         this.downloadCsv = function() {
             if (saveAs) {
-                var headings = $("#postContentWrapper").find("h4, h5");
+                var headings = $("#postContentWrapper").find("h3, h4, h5");
 
                 var cards = [];
                 headings.each(function () {
