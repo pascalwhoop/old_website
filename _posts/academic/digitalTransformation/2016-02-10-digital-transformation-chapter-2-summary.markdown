@@ -9,7 +9,7 @@ bannersize:
 github: true
 hascsvdownload: true
 author: Pascal Brokmeier
-summary: Summarizing all slides and readings for the chapter
+summary: The development of Information Resource Management as a discipline including the merger of information management and IS Management. Also the aspect of strategy is discussed and how IS and information affects different strategies. A comparison between the Market based view and the Ressource based view helps to understand different popular perspectives used to improve an organizations performance and competitive position. 
 ---
 
 ## Information as a resource

@@ -9,7 +9,7 @@ bannersize:
 github: true
 hascsvdownload: true
 author: Pascal Brokmeier
-summary: Summarizing all slides and readings for the chapter
+summary: IT Governance is the practice of ensuring that IS / IT contributes to the organizational goals and strategies. For this, control and monitor mechanisms, are required to analyze and improve or alter activities trying to fulfill the requirements that derive from the goals. 
 ---
 
 ## Motivation for IT Governance

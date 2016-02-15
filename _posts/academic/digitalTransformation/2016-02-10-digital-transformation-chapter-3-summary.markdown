@@ -9,7 +9,7 @@ bannersize:
 github: true
 hascsvdownload: true
 author: Pascal Brokmeier
-summary: Summarizing all slides and readings for the chapter
+summary: This unit reflects on how firms can manage their information systems and resources in a manner than supports the strategic goals. Several frameworks are introduced that try to support the alignment between business goals and technical operations which try to support said goals. 
 ---
 
 ##  From IT management to information management

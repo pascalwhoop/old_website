@@ -9,10 +9,10 @@ bannersize:
 github: true
 hascsvdownload: true
 author: Pascal Brokmeier
-summary: Summarizing all slides and readings for the chapter
+summary: IT doesn't always need to a bought ressource but also doesn't always need to be fully custom developments. For any significant investment, a question of sourcing always need to be answered. What services need to be developed, which can be purchased?
 ---
 
-## Introductory example: IT-Sourcing at GM
+#### Introductory example: IT-Sourcing at GM
 
 GM began insourcing during the 80s. In the 90s they began outsourcing part of their IT. After 2012 they started moving back to making IT a core competence again. 
 

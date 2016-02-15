@@ -9,7 +9,7 @@ bannersize:
 github: true
 hascsvdownload: true
 author: Pascal Brokmeier
-summary: Summarizing all slides and readings for the chapter
+summary: An introduction to the course Digital Transformation at the University of Cologne. Held by Prof. Schoder.
 ---
 
 DT is the use of new digital technologies to enable major business improvements. It radically improves performance or reach of enterprises. For this it uses, social media, mobile technologies, embedded technologies, analytics and other trends in IT.

@@ -9,7 +9,7 @@ bannersize:
 github: true
 hascsvdownload: true
 author: Pascal Brokmeier
-summary: Summarizing all slides and readings for the chapter
+summary: Several ways of ensuring performance and direction for IT projects and activities are introduced. First, a general framework by Krcmar is described following a few quantitative methods of assessing the utilty of projects and a multidimensional way of capturing qualitative aspects of projects. 
 ---
 
 ## Motivation for IT Controlling
@@ -36,7 +36,7 @@ Overall, Controlling is a German term, being closely related to IT Governance.
 ### IT Controlling by Krcmar (2013/2015)
 
 1. Portfolio
-2. Projecte
+2. Projects
 3. Products
 4. Infrastructure
 
