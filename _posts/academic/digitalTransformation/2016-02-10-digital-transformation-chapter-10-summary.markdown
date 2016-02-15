@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Big Data and BI - Digital Transformation Chapter 10 @ UzK"
-date: 2016-02-14
+date: 2016-02-15
 categories: academic
 tags: ["digital transformation",  "university", "iot", "industrie 4.0", "digitalisation"]
 banner: 
